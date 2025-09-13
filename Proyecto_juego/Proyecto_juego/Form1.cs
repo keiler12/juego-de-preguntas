@@ -21,5 +21,14 @@ namespace Proyecto_juego
         {
 
         }
+
+        private void lblbienvenido_Click(object sender, EventArgs e)
+        {
+            lblbienvenido.Font = new Font(lblbienvenido.Font.FontFamily, 60); // cambiamos el tamaño de la letra a 60
+            lblbienvenido.AutoSize = false; // Desactiva AutoSize
+            lblbienvenido.Font = new Font("Arial", 20, FontStyle.Regular); // Fija fuente, tamaño y estilo
+            lblbienvenido.Size = new Size(250, 60); // Ajusta el espacio para el texto
+            lblbienvenido.Text = "bienvenido"; // Asegura que tenga 
+        }
     }
 }

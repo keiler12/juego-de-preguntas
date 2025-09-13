@@ -32,6 +32,7 @@
             this.lblandres = new System.Windows.Forms.Label();
             this.lblkeiler = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblbienvenido = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnjugar
@@ -46,7 +47,7 @@
             // lblandres
             // 
             this.lblandres.AutoSize = true;
-            this.lblandres.Location = new System.Drawing.Point(466, 152);
+            this.lblandres.Location = new System.Drawing.Point(30, 53);
             this.lblandres.Name = "lblandres";
             this.lblandres.Size = new System.Drawing.Size(40, 13);
             this.lblandres.TabIndex = 1;
@@ -55,7 +56,7 @@
             // lblkeiler
             // 
             this.lblkeiler.AutoSize = true;
-            this.lblkeiler.Location = new System.Drawing.Point(569, 102);
+            this.lblkeiler.Location = new System.Drawing.Point(37, 22);
             this.lblkeiler.Name = "lblkeiler";
             this.lblkeiler.Size = new System.Drawing.Size(33, 13);
             this.lblkeiler.TabIndex = 2;
@@ -70,11 +71,21 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // lblbienvenido
+            // 
+            this.lblbienvenido.Location = new System.Drawing.Point(238, 53);
+            this.lblbienvenido.Name = "lblbienvenido";
+            this.lblbienvenido.Size = new System.Drawing.Size(161, 74);
+            this.lblbienvenido.TabIndex = 4;
+            this.lblbienvenido.Text = "Bienvenido";
+            this.lblbienvenido.Click += new System.EventHandler(this.lblbienvenido_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblbienvenido);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblkeiler);
             this.Controls.Add(this.lblandres);
@@ -93,6 +104,7 @@
         private System.Windows.Forms.Label lblandres;
         private System.Windows.Forms.Label lblkeiler;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblbienvenido;
     }
 }
 
