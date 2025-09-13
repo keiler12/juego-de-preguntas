@@ -31,6 +31,7 @@
             this.btnjugar = new System.Windows.Forms.Button();
             this.lblandres = new System.Windows.Forms.Label();
             this.lblkeiler = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnjugar
@@ -60,11 +61,21 @@
             this.lblkeiler.TabIndex = 2;
             this.lblkeiler.Text = "Keiler";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(669, 291);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblkeiler);
             this.Controls.Add(this.lblandres);
             this.Controls.Add(this.btnjugar);
@@ -81,6 +92,7 @@
         private System.Windows.Forms.Button btnjugar;
         private System.Windows.Forms.Label lblandres;
         private System.Windows.Forms.Label lblkeiler;
+        private System.Windows.Forms.Button button1;
     }
 }
 
