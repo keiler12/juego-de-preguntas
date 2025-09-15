@@ -19,9 +19,12 @@ namespace Proyecto_juego
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-        
-            
+            // Ruta del archivo MP3 
+            axWindowsMediaPlayer1.URL = @"C:\Users\Reverie Pink\Downloads\quiz-master-382651.mp3";
+            axWindowsMediaPlayer1.settings.setMode("loop", true); // Música en bucle
+            axWindowsMediaPlayer1.Ctlcontrols.play();             // Inicia reproducción
+
+
             //Título
             lblbienvenido.Font = new Font("Century Gothic", 28, FontStyle.Bold);
             lblbienvenido.ForeColor = Color.Black;

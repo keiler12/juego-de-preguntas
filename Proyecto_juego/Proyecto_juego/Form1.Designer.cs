@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnjugar = new System.Windows.Forms.Button();
             this.lblandres = new System.Windows.Forms.Label();
             this.lblkeiler = new System.Windows.Forms.Label();
@@ -35,12 +36,14 @@
             this.lblbienvenido = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnjugar
             // 
-            this.btnjugar.Location = new System.Drawing.Point(108, 103);
+            this.btnjugar.Location = new System.Drawing.Point(100, 103);
             this.btnjugar.Name = "btnjugar";
             this.btnjugar.Size = new System.Drawing.Size(152, 29);
             this.btnjugar.TabIndex = 0;
@@ -69,7 +72,7 @@
             // 
             // btntutorial
             // 
-            this.btntutorial.Location = new System.Drawing.Point(108, 153);
+            this.btntutorial.Location = new System.Drawing.Point(100, 155);
             this.btntutorial.Name = "btntutorial";
             this.btntutorial.Size = new System.Drawing.Size(152, 26);
             this.btntutorial.TabIndex = 3;
@@ -81,7 +84,7 @@
             // 
             this.lblbienvenido.AutoSize = true;
             this.lblbienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbienvenido.Location = new System.Drawing.Point(65, 12);
+            this.lblbienvenido.Location = new System.Drawing.Point(58, 12);
             this.lblbienvenido.Name = "lblbienvenido";
             this.lblbienvenido.Size = new System.Drawing.Size(216, 39);
             this.lblbienvenido.TabIndex = 4;
@@ -105,11 +108,21 @@
             this.panel1.Controls.Add(this.lblbienvenido);
             this.panel1.Controls.Add(this.lblnombre);
             this.panel1.Controls.Add(this.btnjugar);
-            this.panel1.Location = new System.Drawing.Point(239, 99);
+            this.panel1.Location = new System.Drawing.Point(278, 157);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(357, 212);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(730, 217);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(139, 50);
+            this.axWindowsMediaPlayer1.TabIndex = 8;
+            this.axWindowsMediaPlayer1.Visible = false;
             // 
             // Form1
             // 
@@ -117,7 +130,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.istockphoto_1342416557_612x612;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(893, 563);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblkeiler);
             this.Controls.Add(this.lblandres);
@@ -126,6 +140,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,6 +155,7 @@
         private System.Windows.Forms.Label lblbienvenido;
         private System.Windows.Forms.Label lblnombre;
         private System.Windows.Forms.Panel panel1;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
 
