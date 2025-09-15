@@ -31,68 +31,101 @@
             this.btnjugar = new System.Windows.Forms.Button();
             this.lblandres = new System.Windows.Forms.Label();
             this.lblkeiler = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btntutorial = new System.Windows.Forms.Button();
             this.lblbienvenido = new System.Windows.Forms.Label();
+            this.lblnombre = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnjugar
             // 
-            this.btnjugar.Location = new System.Drawing.Point(343, 264);
+            this.btnjugar.Location = new System.Drawing.Point(108, 103);
             this.btnjugar.Name = "btnjugar";
-            this.btnjugar.Size = new System.Drawing.Size(75, 23);
+            this.btnjugar.Size = new System.Drawing.Size(152, 29);
             this.btnjugar.TabIndex = 0;
-            this.btnjugar.Text = "Jugar";
+            this.btnjugar.Text = "Start game";
             this.btnjugar.UseVisualStyleBackColor = true;
+            this.btnjugar.Click += new System.EventHandler(this.btnjugar_Click);
             // 
             // lblandres
             // 
             this.lblandres.AutoSize = true;
-            this.lblandres.Location = new System.Drawing.Point(30, 53);
+            this.lblandres.Location = new System.Drawing.Point(30, 48);
             this.lblandres.Name = "lblandres";
-            this.lblandres.Size = new System.Drawing.Size(40, 13);
+            this.lblandres.Size = new System.Drawing.Size(121, 13);
             this.lblandres.TabIndex = 1;
-            this.lblandres.Text = "Andres";
+            this.lblandres.Text = "Andres Martinez Medina";
+            this.lblandres.Click += new System.EventHandler(this.lblandres_Click);
             // 
             // lblkeiler
             // 
             this.lblkeiler.AutoSize = true;
-            this.lblkeiler.Location = new System.Drawing.Point(37, 22);
+            this.lblkeiler.Location = new System.Drawing.Point(30, 9);
             this.lblkeiler.Name = "lblkeiler";
-            this.lblkeiler.Size = new System.Drawing.Size(33, 13);
+            this.lblkeiler.Size = new System.Drawing.Size(109, 13);
             this.lblkeiler.TabIndex = 2;
-            this.lblkeiler.Text = "Keiler";
+            this.lblkeiler.Text = "Keiler Medina Herrera";
             // 
-            // button1
+            // btntutorial
             // 
-            this.button1.Location = new System.Drawing.Point(669, 291);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btntutorial.Location = new System.Drawing.Point(108, 153);
+            this.btntutorial.Name = "btntutorial";
+            this.btntutorial.Size = new System.Drawing.Size(152, 26);
+            this.btntutorial.TabIndex = 3;
+            this.btntutorial.Text = "Tutorial";
+            this.btntutorial.UseVisualStyleBackColor = true;
+            this.btntutorial.Click += new System.EventHandler(this.btntutorial_Click);
             // 
             // lblbienvenido
             // 
-            this.lblbienvenido.Location = new System.Drawing.Point(238, 53);
+            this.lblbienvenido.AutoSize = true;
+            this.lblbienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbienvenido.Location = new System.Drawing.Point(65, 12);
             this.lblbienvenido.Name = "lblbienvenido";
-            this.lblbienvenido.Size = new System.Drawing.Size(161, 74);
+            this.lblbienvenido.Size = new System.Drawing.Size(216, 39);
             this.lblbienvenido.TabIndex = 4;
-            this.lblbienvenido.Text = "Bienvenido";
+            this.lblbienvenido.Text = "Bienvenido a";
             this.lblbienvenido.Click += new System.EventHandler(this.lblbienvenido_Click);
+            // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombre.Location = new System.Drawing.Point(117, 60);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(110, 24);
+            this.lblnombre.TabIndex = 5;
+            this.lblnombre.Text = "Quiz Master";
+            this.lblnombre.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btntutorial);
+            this.panel1.Controls.Add(this.lblbienvenido);
+            this.panel1.Controls.Add(this.lblnombre);
+            this.panel1.Controls.Add(this.btnjugar);
+            this.panel1.Location = new System.Drawing.Point(239, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(357, 212);
+            this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Proyecto_juego.Properties.Resources.istockphoto_1342416557_612x612;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblbienvenido);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblkeiler);
             this.Controls.Add(this.lblandres);
-            this.Controls.Add(this.btnjugar);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,8 +136,10 @@
         private System.Windows.Forms.Button btnjugar;
         private System.Windows.Forms.Label lblandres;
         private System.Windows.Forms.Label lblkeiler;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btntutorial;
         private System.Windows.Forms.Label lblbienvenido;
+        private System.Windows.Forms.Label lblnombre;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
