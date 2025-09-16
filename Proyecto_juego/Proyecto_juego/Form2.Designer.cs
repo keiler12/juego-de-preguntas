@@ -33,6 +33,7 @@
             this.btnintermedio = new System.Windows.Forms.Button();
             this.btndificil = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnatras = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,13 +86,24 @@
             this.panel1.Size = new System.Drawing.Size(317, 242);
             this.panel1.TabIndex = 4;
             // 
+            // btnatras
+            // 
+            this.btnatras.Location = new System.Drawing.Point(12, 12);
+            this.btnatras.Name = "btnatras";
+            this.btnatras.Size = new System.Drawing.Size(81, 31);
+            this.btnatras.TabIndex = 5;
+            this.btnatras.Text = "< Atras";
+            this.btnatras.UseVisualStyleBackColor = true;
+            this.btnatras.Click += new System.EventHandler(this.btnatras_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.istockphoto_1342416557_612x612;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(751, 450);
+            this.Controls.Add(this.btnatras);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -109,5 +121,6 @@
         private System.Windows.Forms.Button btnintermedio;
         private System.Windows.Forms.Button btndificil;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnatras;
     }
 }

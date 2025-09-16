@@ -59,8 +59,21 @@ namespace Proyecto_juego
             btndificil.Font = new Font("Century Gothic", 12, FontStyle.Bold);
             btndificil.Cursor = Cursors.Hand;
 
+            btnatras.BackColor = Color.FromArgb(203, 46, 10);
+            btnatras .FlatStyle = FlatStyle.Flat;
+            btnatras .FlatAppearance.BorderSize = 0;
+            btnatras .ForeColor = Color.White;
+            btnatras.Font = new Font("Century",10, FontStyle.Bold);
+
             panel1.BackColor = Color.FromArgb(180, 255, 255, 255); // semi-transparente
 
+        }
+
+        private void btnatras_Click(object sender, EventArgs e)
+        {
+            Form1 atras = new Form1();
+            atras.Show();
+            this.Hide();
         }
     }
 }
