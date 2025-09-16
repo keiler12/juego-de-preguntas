@@ -10,8 +10,12 @@ using System.Windows.Forms;
 
 namespace Proyecto_juego
 {
+    using System.IO;
+    using System.Media;
+
     public partial class Form1 : Form
     {
+        private SoundPlayer player;
         public Form1()
         {
             InitializeComponent();
@@ -19,18 +23,23 @@ namespace Proyecto_juego
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Ruta del archivo MP3 
-            axWindowsMediaPlayer1.URL = @"C:\Users\Reverie Pink\Downloads\quiz-master-382651.mp3";
-            axWindowsMediaPlayer1.settings.setMode("loop", true); // Música en bucle
-            axWindowsMediaPlayer1.Ctlcontrols.play();             // Inicia reproducción
+            string tempFile = Path.Combine(Path.GetTempPath(), "quiz-master-382651.wav");
+            using (var resourceStream = Properties.Resources.quiz_master_382651)
+            using (var fileStream = File.Create(tempFile))
+            {
+                resourceStream.CopyTo(fileStream);
+            }
 
+            //Inicializar SoundPlayer
+            player = new SoundPlayer(tempFile);
+            player.PlayLooping(); // Reproduce en bucle
 
             //Título
             lblbienvenido.Font = new Font("Century Gothic", 28, FontStyle.Bold);
             lblbienvenido.ForeColor = Color.Black;
             lblbienvenido.BackColor = Color.Transparent;
             lblbienvenido.TextAlign = ContentAlignment.MiddleCenter;
-            
+
             //Nombre
             lblnombre.Font = new Font("Century Gothic", 15, FontStyle.Bold);
             lblnombre.ForeColor = Color.Black;
@@ -48,9 +57,8 @@ namespace Proyecto_juego
             lblandres.BackColor = Color.Transparent;
             lblandres.TextAlign = ContentAlignment.MiddleCenter;
 
-
             //Botón Start
-            btnjugar.BackColor = Color.FromArgb(52, 152, 219); 
+            btnjugar.BackColor = Color.FromArgb(52, 152, 219);
             btnjugar.FlatStyle = FlatStyle.Flat;
             btnjugar.FlatAppearance.BorderSize = 0;
             btnjugar.ForeColor = Color.White;
@@ -58,7 +66,7 @@ namespace Proyecto_juego
             btnjugar.Cursor = Cursors.Hand;
 
             //Botón Tutorial
-            btntutorial.BackColor = Color.FromArgb(231, 76, 60); 
+            btntutorial.BackColor = Color.FromArgb(231, 76, 60);
             btntutorial.FlatStyle = FlatStyle.Flat;
             btntutorial.FlatAppearance.BorderSize = 0;
             btntutorial.ForeColor = Color.White;

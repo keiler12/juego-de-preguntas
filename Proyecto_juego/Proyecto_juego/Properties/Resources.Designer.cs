@@ -71,6 +71,15 @@ namespace Proyecto_juego.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream quiz_master_382651 {
+            get {
+                return ResourceManager.GetStream("quiz_master_382651", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_14_at_11_25_09_PM {
