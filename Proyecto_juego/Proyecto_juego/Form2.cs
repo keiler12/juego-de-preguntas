@@ -19,7 +19,9 @@ namespace Proyecto_juego
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form3 facil = new Form3();
+            facil.Show();
+            this.Hide();
         }
 
         private void lbldificultad_Click(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace Proyecto_juego
             btnfacil.Font = new Font("Century Gothic", 12, FontStyle.Bold);
             btnfacil.Cursor = Cursors.Hand;
 
-            //Botón intermediate
+            //Botón intermediate 
             btnintermedio.BackColor = Color.FromArgb(241, 196, 15);
             btnintermedio.FlatStyle = FlatStyle.Flat;
             btnintermedio.FlatAppearance.BorderSize = 0;
@@ -74,6 +76,11 @@ namespace Proyecto_juego
             Form1 atras = new Form1();
             atras.Show();
             this.Hide();
+        }
+
+        private void btnintermedio_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

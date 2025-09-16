@@ -88,5 +88,25 @@ namespace Proyecto_juego.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_16_at_2_28_30_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-09-16 at 2.28.30 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_16_at_4_47_04_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-09-16 at 4.47.04 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

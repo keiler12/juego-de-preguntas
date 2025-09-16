@@ -65,6 +65,7 @@
             this.btnintermedio.TabIndex = 2;
             this.btnintermedio.Text = "Intermediate";
             this.btnintermedio.UseVisualStyleBackColor = true;
+            this.btnintermedio.Click += new System.EventHandler(this.btnintermedio_Click);
             // 
             // btndificil
             // 
