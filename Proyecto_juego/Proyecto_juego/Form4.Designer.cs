@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnvenus = new System.Windows.Forms.Button();
+            this.btntierra = new System.Windows.Forms.Button();
+            this.btnmercurio = new System.Windows.Forms.Button();
+            this.btnmarte = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,67 +42,15 @@
             // 
             this.panel1.BackgroundImage = global::Proyecto_juego.Properties.Resources.WhatsApp_Image_2025_09_16_at_4_47_04_PM;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(26, 12);
+            this.panel1.Location = new System.Drawing.Point(219, 22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(369, 212);
             this.panel1.TabIndex = 0;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(80, 327);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(77, 28);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tierra";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(396, 327);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(83, 28);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Venus";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(80, 395);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(103, 28);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Mercurio";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(396, 395);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(75, 28);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Marte";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(80, 240);
+            this.panel2.Location = new System.Drawing.Point(230, 249);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(348, 47);
             this.panel2.TabIndex = 5;
@@ -111,11 +59,47 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 12);
+            this.label1.Location = new System.Drawing.Point(9, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(331, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cual es el planeta mas cercano al sol?";
+            // 
+            // btnvenus
+            // 
+            this.btnvenus.Location = new System.Drawing.Point(230, 336);
+            this.btnvenus.Name = "btnvenus";
+            this.btnvenus.Size = new System.Drawing.Size(75, 23);
+            this.btnvenus.TabIndex = 6;
+            this.btnvenus.Text = "Venus";
+            this.btnvenus.UseVisualStyleBackColor = true;
+            // 
+            // btntierra
+            // 
+            this.btntierra.Location = new System.Drawing.Point(495, 336);
+            this.btntierra.Name = "btntierra";
+            this.btntierra.Size = new System.Drawing.Size(75, 23);
+            this.btntierra.TabIndex = 7;
+            this.btntierra.Text = "Tierra";
+            this.btntierra.UseVisualStyleBackColor = true;
+            // 
+            // btnmercurio
+            // 
+            this.btnmercurio.Location = new System.Drawing.Point(230, 398);
+            this.btnmercurio.Name = "btnmercurio";
+            this.btnmercurio.Size = new System.Drawing.Size(75, 23);
+            this.btnmercurio.TabIndex = 8;
+            this.btnmercurio.Text = "Mercurio";
+            this.btnmercurio.UseVisualStyleBackColor = true;
+            // 
+            // btnmarte
+            // 
+            this.btnmarte.Location = new System.Drawing.Point(495, 398);
+            this.btnmarte.Name = "btnmarte";
+            this.btnmarte.Size = new System.Drawing.Size(75, 23);
+            this.btnmarte.TabIndex = 9;
+            this.btnmarte.Text = "Marte";
+            this.btnmarte.UseVisualStyleBackColor = true;
             // 
             // Form4
             // 
@@ -124,29 +108,28 @@
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.WhatsApp_Image_2025_09_16_at_2_28_30_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnmarte);
+            this.Controls.Add(this.btnmercurio);
+            this.Controls.Add(this.btntierra);
+            this.Controls.Add(this.btnvenus);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.panel1);
             this.Name = "Form4";
             this.Text = "Form4";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnvenus;
+        private System.Windows.Forms.Button btntierra;
+        private System.Windows.Forms.Button btnmercurio;
+        private System.Windows.Forms.Button btnmarte;
     }
 }
