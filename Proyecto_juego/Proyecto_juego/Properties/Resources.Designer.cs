@@ -71,6 +71,106 @@ namespace Proyecto_juego.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta1 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta10 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta2 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta3 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta4 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta5 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta6 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta7 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta8 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pregunta9 {
+            get {
+                object obj = ResourceManager.GetObject("pregunta9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream quiz_master_382651 {
@@ -95,16 +195,6 @@ namespace Proyecto_juego.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_16_at_2_28_30_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2025-09-16 at 2.28.30 PM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_16_at_4_47_04_PM {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2025-09-16 at 4.47.04 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

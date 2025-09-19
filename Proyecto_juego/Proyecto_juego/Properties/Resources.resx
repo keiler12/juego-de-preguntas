@@ -130,7 +130,34 @@
   <data name="istockphoto-1342416557-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-1342416557-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2025-09-16 at 4.47.04 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="pregunta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2025-09-16 at 4.47.04 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragon-ball-characters-1600-x-1132-wallpaper-rdtgukdvgl0u20ve.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\naruto-shippuden-all-characters-fiery-poster-1mxaylnezr64ymf6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oceanus-es.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pentagono.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\403-cual-es-la-mitad-de-una-o-uno-portrait.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\francia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\All_Gizah_Pyramids.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tapiz-ultima-cena-leonardo-da-vinci1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pregunta5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4984150_stock-vector-jungle-animals.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
