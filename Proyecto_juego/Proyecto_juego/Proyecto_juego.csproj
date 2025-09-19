@@ -180,5 +180,8 @@
   <ItemGroup>
     <None Include="Resources\4984150_stock-vector-jungle-animals.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thinking-time-148496.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

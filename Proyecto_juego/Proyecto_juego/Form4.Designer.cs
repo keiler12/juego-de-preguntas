@@ -50,12 +50,13 @@ namespace Proyecto_juego
             this.label1.TabIndex = 0;
             this.label1.Text = "Cual es el planeta mas cercano al sol?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Paint += new System.Windows.Forms.PaintEventHandler(this.label1_Paint);
             // 
             // btnvenus
             // 
-            this.btnvenus.Location = new System.Drawing.Point(230, 336);
+            this.btnvenus.Location = new System.Drawing.Point(216, 333);
             this.btnvenus.Name = "btnvenus";
-            this.btnvenus.Size = new System.Drawing.Size(75, 23);
+            this.btnvenus.Size = new System.Drawing.Size(101, 35);
             this.btnvenus.TabIndex = 6;
             this.btnvenus.Text = "Venus";
             this.btnvenus.UseVisualStyleBackColor = true;
@@ -63,9 +64,9 @@ namespace Proyecto_juego
             // 
             // btntierra
             // 
-            this.btntierra.Location = new System.Drawing.Point(495, 336);
+            this.btntierra.Location = new System.Drawing.Point(486, 333);
             this.btntierra.Name = "btntierra";
-            this.btntierra.Size = new System.Drawing.Size(75, 23);
+            this.btntierra.Size = new System.Drawing.Size(102, 35);
             this.btntierra.TabIndex = 7;
             this.btntierra.Text = "Tierra";
             this.btntierra.UseVisualStyleBackColor = true;
@@ -73,9 +74,9 @@ namespace Proyecto_juego
             // 
             // btnmercurio
             // 
-            this.btnmercurio.Location = new System.Drawing.Point(230, 398);
+            this.btnmercurio.Location = new System.Drawing.Point(218, 403);
             this.btnmercurio.Name = "btnmercurio";
-            this.btnmercurio.Size = new System.Drawing.Size(75, 23);
+            this.btnmercurio.Size = new System.Drawing.Size(99, 35);
             this.btnmercurio.TabIndex = 8;
             this.btnmercurio.Text = "Mercurio";
             this.btnmercurio.UseVisualStyleBackColor = true;
@@ -83,9 +84,9 @@ namespace Proyecto_juego
             // 
             // btnmarte
             // 
-            this.btnmarte.Location = new System.Drawing.Point(495, 398);
+            this.btnmarte.Location = new System.Drawing.Point(487, 403);
             this.btnmarte.Name = "btnmarte";
-            this.btnmarte.Size = new System.Drawing.Size(75, 23);
+            this.btnmarte.Size = new System.Drawing.Size(101, 35);
             this.btnmarte.TabIndex = 9;
             this.btnmarte.Text = "Marte";
             this.btnmarte.UseVisualStyleBackColor = true;
