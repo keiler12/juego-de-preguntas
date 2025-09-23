@@ -19,8 +19,8 @@ namespace Proyecto_juego
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 facil = new Form3();
-            facil.Show();
+            Form3 conteo = new Form3("facil");
+            conteo.Show();
             this.Hide();
         }
 
@@ -80,7 +80,9 @@ namespace Proyecto_juego
 
         private void btnintermedio_Click(object sender, EventArgs e)
         {
-
+            Form3 conteo = new Form3("intermedio");
+            conteo.Show();
+            this.Hide();
         }
     }
 }

@@ -43,6 +43,7 @@
             // 
             // btnjugar
             // 
+            this.btnjugar.FlatAppearance.BorderSize = 0;
             this.btnjugar.Location = new System.Drawing.Point(100, 103);
             this.btnjugar.Name = "btnjugar";
             this.btnjugar.Size = new System.Drawing.Size(152, 29);

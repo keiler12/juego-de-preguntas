@@ -13,10 +13,12 @@ namespace Proyecto_juego
     public partial class Form3 : Form
     {
         int contador = 3;
+        string modo_juego;
 
-        public Form3()
+        public Form3(string modo_juego)
         {
             InitializeComponent();
+           this.modo_juego = modo_juego;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -61,13 +63,24 @@ namespace Proyecto_juego
                 lblconteo.ForeColor = Color.Aqua;
                 lblconteo.Font = new Font("centrry Gothic", 60, FontStyle.Bold);
             }
-            else
+            else 
             {
                 timer1.Stop();
 
-                Form4 form = new Form4();
-                form.Show();
-                this.Hide();
+                if (modo_juego == "facil")
+                {
+                    Form4 facil = new Form4();
+                    facil.Show();
+                    this.Hide();
+                }
+
+                else if (modo_juego == "intermedio")
+                {
+                    Form5 intermedio = new Form5();
+                    intermedio.Show();
+                    this.Hide();
+                }
+                
             }
         }
     }

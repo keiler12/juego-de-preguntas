@@ -31,10 +31,10 @@ namespace Proyecto_juego
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnvenus = new System.Windows.Forms.Button();
-            this.btntierra = new System.Windows.Forms.Button();
-            this.btnmercurio = new System.Windows.Forms.Button();
-            this.btnmarte = new System.Windows.Forms.Button();
+            this.btnopcion1 = new System.Windows.Forms.Button();
+            this.btnopcion2 = new System.Windows.Forms.Button();
+            this.btnopcion3 = new System.Windows.Forms.Button();
+            this.btnopcion4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -48,49 +48,49 @@ namespace Proyecto_juego
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(800, 60);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Cual es el planeta mas cercano al sol?";
+            this.label1.Text = "Preguntas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Paint += new System.Windows.Forms.PaintEventHandler(this.label1_Paint);
             // 
-            // btnvenus
+            // btnopcion1
             // 
-            this.btnvenus.Location = new System.Drawing.Point(216, 333);
-            this.btnvenus.Name = "btnvenus";
-            this.btnvenus.Size = new System.Drawing.Size(101, 35);
-            this.btnvenus.TabIndex = 6;
-            this.btnvenus.Text = "Venus";
-            this.btnvenus.UseVisualStyleBackColor = true;
-            this.btnvenus.Click += new System.EventHandler(this.btnvenus_Click);
+            this.btnopcion1.Location = new System.Drawing.Point(216, 333);
+            this.btnopcion1.Name = "btnopcion1";
+            this.btnopcion1.Size = new System.Drawing.Size(101, 35);
+            this.btnopcion1.TabIndex = 6;
+            this.btnopcion1.Text = "Opcion 1";
+            this.btnopcion1.UseVisualStyleBackColor = true;
+            this.btnopcion1.Click += new System.EventHandler(this.btnvenus_Click);
             // 
-            // btntierra
+            // btnopcion2
             // 
-            this.btntierra.Location = new System.Drawing.Point(486, 333);
-            this.btntierra.Name = "btntierra";
-            this.btntierra.Size = new System.Drawing.Size(102, 35);
-            this.btntierra.TabIndex = 7;
-            this.btntierra.Text = "Tierra";
-            this.btntierra.UseVisualStyleBackColor = true;
-            this.btntierra.Click += new System.EventHandler(this.btntierra_Click_1);
+            this.btnopcion2.Location = new System.Drawing.Point(486, 333);
+            this.btnopcion2.Name = "btnopcion2";
+            this.btnopcion2.Size = new System.Drawing.Size(102, 35);
+            this.btnopcion2.TabIndex = 7;
+            this.btnopcion2.Text = "Opcion 2";
+            this.btnopcion2.UseVisualStyleBackColor = true;
+            this.btnopcion2.Click += new System.EventHandler(this.btntierra_Click_1);
             // 
-            // btnmercurio
+            // btnopcion3
             // 
-            this.btnmercurio.Location = new System.Drawing.Point(218, 403);
-            this.btnmercurio.Name = "btnmercurio";
-            this.btnmercurio.Size = new System.Drawing.Size(99, 35);
-            this.btnmercurio.TabIndex = 8;
-            this.btnmercurio.Text = "Mercurio";
-            this.btnmercurio.UseVisualStyleBackColor = true;
-            this.btnmercurio.Click += new System.EventHandler(this.btnmercurio_Click);
+            this.btnopcion3.Location = new System.Drawing.Point(218, 403);
+            this.btnopcion3.Name = "btnopcion3";
+            this.btnopcion3.Size = new System.Drawing.Size(99, 35);
+            this.btnopcion3.TabIndex = 8;
+            this.btnopcion3.Text = "Opcion 3";
+            this.btnopcion3.UseVisualStyleBackColor = true;
+            this.btnopcion3.Click += new System.EventHandler(this.btnmercurio_Click);
             // 
-            // btnmarte
+            // btnopcion4
             // 
-            this.btnmarte.Location = new System.Drawing.Point(487, 403);
-            this.btnmarte.Name = "btnmarte";
-            this.btnmarte.Size = new System.Drawing.Size(101, 35);
-            this.btnmarte.TabIndex = 9;
-            this.btnmarte.Text = "Marte";
-            this.btnmarte.UseVisualStyleBackColor = true;
-            this.btnmarte.Click += new System.EventHandler(this.btnmarte_Click);
+            this.btnopcion4.Location = new System.Drawing.Point(487, 403);
+            this.btnopcion4.Name = "btnopcion4";
+            this.btnopcion4.Size = new System.Drawing.Size(101, 35);
+            this.btnopcion4.TabIndex = 9;
+            this.btnopcion4.Text = "Opcion 4";
+            this.btnopcion4.UseVisualStyleBackColor = true;
+            this.btnopcion4.Click += new System.EventHandler(this.btnmarte_Click);
             // 
             // pictureBox1
             // 
@@ -110,10 +110,10 @@ namespace Proyecto_juego
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnmarte);
-            this.Controls.Add(this.btnmercurio);
-            this.Controls.Add(this.btntierra);
-            this.Controls.Add(this.btnvenus);
+            this.Controls.Add(this.btnopcion4);
+            this.Controls.Add(this.btnopcion3);
+            this.Controls.Add(this.btnopcion2);
+            this.Controls.Add(this.btnopcion1);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -129,10 +129,10 @@ namespace Proyecto_juego
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnvenus;
-        private System.Windows.Forms.Button btntierra;
-        private System.Windows.Forms.Button btnmercurio;
-        private System.Windows.Forms.Button btnmarte;
+        private System.Windows.Forms.Button btnopcion1;
+        private System.Windows.Forms.Button btnopcion2;
+        private System.Windows.Forms.Button btnopcion3;
+        private System.Windows.Forms.Button btnopcion4;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

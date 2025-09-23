@@ -70,6 +70,12 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -182,6 +191,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thinking-time-148496.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preguntaintermedio1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-23 at 3.35.32 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-23 at 3.37.43 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\band-logos-roll-rock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preguntaintermedio4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-23 at 3.41.43 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-23 at 3.42.46 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-23 at 3.44.00 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-23 at 3.44.51 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-23 at 3.41.41 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preguntaintermedio10.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
