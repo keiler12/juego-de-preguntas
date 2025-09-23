@@ -75,6 +75,7 @@
             this.btndificil.TabIndex = 3;
             this.btndificil.Text = "Hard";
             this.btndificil.UseVisualStyleBackColor = true;
+            this.btndificil.Click += new System.EventHandler(this.btndificil_Click);
             // 
             // panel1
             // 

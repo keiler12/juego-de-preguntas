@@ -84,5 +84,12 @@ namespace Proyecto_juego
             conteo.Show();
             this.Hide();
         }
+
+        private void btndificil_Click(object sender, EventArgs e)
+        {
+            Form3 conteo = new Form3("dificil");
+            conteo.Show();
+            this.Hide();
+        }
     }
 }

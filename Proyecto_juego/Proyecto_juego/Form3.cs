@@ -80,6 +80,12 @@ namespace Proyecto_juego
                     intermedio.Show();
                     this.Hide();
                 }
+                else  if (modo_juego == "dificil")
+                {
+                    Form6 dificil = new Form6();
+                    dificil.Show();
+                    this.Hide();
+                }
                 
             }
         }
