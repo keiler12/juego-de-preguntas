@@ -23,45 +23,45 @@ namespace Proyecto_juego
         // Matriz: [pregunta, opción1, opción2, opción3, opción4]
         string[,] preguntas_opciones = new string[,]
         {
-            {"¿En qué año cayó el muro de Berlín?", "1985", "1989", "1991", "1993"},
-            {"En el anime 'Death Note',¿Cuál es el nombre del shinigami(Dios de la muerte) que deja care su libreta en el mundo humano siendo encontrada por Light Yagami?", "Rem", "Gelus", "Ryuk", "Sidoh"},
-            {"¿Qué banda de rock británica lanzó el album 'The Dark Side of the Moon'en 1973?", "Led Zeppelin", "Queen", "The Beatles", "Pink Floyd"},
-            {"¿Cual de los siguientes directores es conocido por sus películas de acción con estilo visual distintivo 'El origen', 'Inception', y 'El caballero de la noche'?", "Quentin Tarantino", "Christofer Nolan", "Martin Scorsese", "James Gunn"},
-            {"¿Cual es la mejor instructor(a) de todo el SENA?", "Ronald", "Mara", "Luz", "Maristela"},
-            {"¿En qué videojuego de 1980 se debe guiar a un personaje a través de un laberinto para comer puntos y evitar a los fantasma?", "Pac-man", "Donkey kong", "Space invaders", "Galaga"},
-            {"¿Qué planeta del sistema solar es conocido por sus anillos los cuales están compuestos principalmente por partículas de hielo y roca?", "Marte", "Jupiter", "Saturno", "Urano"},
-            {"¿Qué principio de la POO permite que un objeto tome multiples formas?", "Abstracción", "Herencia", "Encapsulamiento", "Polimorfismo"},
-            {"¿Qué jugador ganó el balón de oro en el año 2006?", "Zidane", "Fabio Canavarro", "Buffon", "Kaká"},
-            {"¿Cuál es la ciudad mas poblada del mundo?", "Nueva Dheli", "Pekin", "New York", "Tokio"}
+            {"¿En qué año comenzó la Segunda Guerra Mundial en Europa?", "1938", "1945", "1939", "1941"},
+            {"¿Cuál es el nombre del actor que interpreta a Iron Man?", "Chris Evans", "Chris Hemsworth", " Robert Downey Jr", "Mark Ruffalo"},
+            {"¿En el anime Naruto, ¿cuál es el nombre completo del personaje conocido como 'Kakashi', el sensei del equipo 7?", "kakashi Sarutobi", "kakashi Senju", "Kakashi Uchiha", "Kakashi Hatake"},
+            {"¿En qué novela de J.R.R. Tolkien aparece por primera vez el personaje de Sméagol, más tarde conocido como Gollum?", "El Hobbit", "El Señor De Los Anillos", "El Silmalirion", "Los Hijos De Hurin"},
+            {"¿Quién es el dios nórdico del trueno, hijo de Odín y de la giganta Jörð?", "Loki", "Thor", "Balder", "Heidemal"},
+            {"¿En el anime Neon Genesis Evangelion, ¿cuál es el nombre de la organización paramilitar que opera los EVA para combatir a los Ángeles?", "Nerv", "Seele", "WILLE", "GHOST"},
+            {"¿Cuál es el único país de América del Sur que tiene costas en el Océano Pacífico y en el Océano Atlántico?", "Colombia", "Venezuela", "Chile", "Peru"},
+            {"¿Cuál es el nombre del director que filmó la película ¨El Padrino¨ y Apocalypse Now?", "Martin Scorsese", " Francis Ford Coppola", "Alfred Hitchcock", "Stanley Kubrick"},
+            {"¿Cuál fue el nombre del héroe griego que derrotó al Minotauro en el laberinto de Creta?", "Hércules", "Teseo", "Perseo", "Ulises"},
+            {"¿En la serie de juegos ¨Metal Gear Solid¨, ¿cuál es el nombre del protagonista y espía conocido por el alias de 'Solid Snake?", " Big Boss", "Raiden", "Snake", "Kazuhira Miller"}
         };
 
         // Índice de la respuesta correcta para cada pregunta (0 a 3)
         int[] respuestas_correctas = new int[]//usamos un array para guardar las respuestas correctas
         {
-            1, // 1989
-            2, // Ryuk
-            3, // Pink floyd
-            1, // Christofer Nolan
-            3, // MAristela
-            0, // Pac-man
-            2, // Saturno
-            3, // Polimorfismo
-            1, // Canavarro
-            3 // Tokio
+            2, // 1939
+            2, // Robert Downey Jr.
+            3, // Kakashi Hatake
+            0, // El Hobbit
+            1, // Thor
+            0, // Nerv
+            0, // Colombia
+            0, // Francis Ford Coppola
+            1, // Teseo
+            2 // Snake
         };
 
         readonly Image[] imagenesPreguntas = new Image[]// Array de imágenes para cada pregunta, sirve para mostrar la imagen correspondiente a cada pregunta
        {
-            Properties.Resources.preguntaintermedio1,   // Para la pregunta 1
-            Properties.Resources.preguntaintermedio2,   // Para la pregunta 2
-            Properties.Resources.preguntaintermedio3,   // Para la pregunta 3
-            Properties.Resources.preguntaintermedio4,   // Para la pregunta 4
-            Properties.Resources.preguntaintermedio5,   // Para la pregunta 5
-            Properties.Resources.preguntaintermedio6,   // Para la pregunta 6
-            Properties.Resources.preguntaintermedio7,   // Para la pregunta 7
-            Properties.Resources.preguntaintermedio8,   // Para la pregunta 8
-            Properties.Resources.preguntaintermedio9,   // Para la pregunta 9
-            Properties.Resources.preguntaintermedio10   // Para la pregunta 10
+            Properties.Resources.preguntadificil1,   // Para la pregunta 1
+            Properties.Resources.preguntadificil2,   // Para la pregunta 2
+            Properties.Resources.preguntadificil3,   // Para la pregunta 3
+            Properties.Resources.preguntadificil4,   // Para la pregunta 4
+            Properties.Resources.preguntadificil5,   // Para la pregunta 5
+            Properties.Resources.preguntadificil6,   // Para la pregunta 6
+            Properties.Resources.preguntadificil7,   // Para la pregunta 7
+            Properties.Resources.preguntadificil8,   // Para la pregunta 8
+            Properties.Resources.preguntadificil9,   // Para la pregunta 9
+            Properties.Resources.preguntadificil10   // Para la pregunta 10
        };
 
         // Nueva estructura para mezclar preguntas, respuestas e imágenes
