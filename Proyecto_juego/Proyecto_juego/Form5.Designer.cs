@@ -48,6 +48,7 @@
             this.labelpreguntas.TabIndex = 1;
             this.labelpreguntas.Text = "Preguntas";
             this.labelpreguntas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelpreguntas.Click += new System.EventHandler(this.labelpreguntas_Click);
             // 
             // pictureBox1
             // 

@@ -266,5 +266,10 @@ namespace Proyecto_juego
             indice_pregunta++;
             MostrarPregunta();
         }
+
+        private void labelpreguntas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

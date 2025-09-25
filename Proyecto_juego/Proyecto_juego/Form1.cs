@@ -110,7 +110,9 @@ namespace Proyecto_juego
 
         private void btntutorial_Click(object sender, EventArgs e)
         {
-           
+           Form7 tutorial = new Form7();
+            tutorial.Show();
+            this.Hide();
         }
     }
 }
