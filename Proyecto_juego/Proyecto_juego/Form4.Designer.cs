@@ -111,7 +111,6 @@ namespace Proyecto_juego
             this.btnpausa.TabIndex = 11;
             this.btnpausa.Text = "| |";
             this.btnpausa.UseVisualStyleBackColor = true;
-            this.btnpausa.Click += new System.EventHandler(this.btnpausa_Click);
             // 
             // Form4
             // 
