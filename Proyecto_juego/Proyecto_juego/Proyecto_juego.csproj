@@ -273,5 +273,17 @@
   <ItemGroup>
     <None Include="Resources\image %285%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\events-in-moscow-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preguntadificil3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preguntadificil5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preguntadificil7.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

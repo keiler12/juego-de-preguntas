@@ -6,36 +6,44 @@
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Proyecto_juego||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|c:\\users\\user\\juego-de-preguntas\\proyecto_juego\\proyecto_juego\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|c:\\users\\user\\juego-de-preguntas\\proyecto_juego\\proyecto_juego\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|c:\\users\\user\\juego-de-preguntas\\proyecto_juego\\proyecto_juego\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|c:\\users\\user\\juego-de-preguntas\\proyecto_juego\\proyecto_juego\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,20 +54,12 @@
       "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|solutionrelative:proyecto_juego\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9DC32B5-E448-40FE-80FC-4A9A33EF598B}|Proyecto_juego\\Proyecto_juego.csproj|C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\proyecto_juego\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -77,17 +77,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 212,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form4.cs",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form4.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form4.cs",
               "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form4.cs",
               "RelativeToolTip": "Proyecto_juego\\Form4.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T21:59:59.851Z",
               "IsPinned": true,
@@ -95,13 +95,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Form5.cs",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form5.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form5.cs",
               "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form5.cs",
               "RelativeToolTip": "Proyecto_juego\\Form5.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-23T18:23:59.541Z",
               "IsPinned": true,
@@ -109,20 +109,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Form3.cs",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form3.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form3.cs",
               "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form3.cs",
               "RelativeToolTip": "Proyecto_juego\\Form3.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwBcAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T20:43:39.043Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form1.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form1.cs",
@@ -135,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Form7.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form7.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form7.cs",
@@ -196,30 +197,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form2.cs",
-              "RelativeDocumentMoniker": "Proyecto_juego\\Form2.cs",
-              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form2.cs",
-              "RelativeToolTip": "Proyecto_juego\\Form2.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAEwD8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T20:36:54.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Form3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form3.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form3.cs",
               "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form3.cs [Dise\u00F1o]",
               "RelativeToolTip": "Proyecto_juego\\Form3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-16T20:36:47.501Z"
+              "WhenOpened": "2025-09-16T20:36:47.501Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Form6.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form6.cs",
+              "RelativeDocumentMoniker": "Proyecto_juego\\Form6.cs",
+              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form6.cs",
+              "RelativeToolTip": "Proyecto_juego\\Form6.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T21:31:50.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Proyecto_juego",
+              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Proyecto_juego.csproj",
+              "RelativeDocumentMoniker": "Proyecto_juego\\Proyecto_juego.csproj",
+              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Proyecto_juego.csproj*",
+              "RelativeToolTip": "Proyecto_juego\\Proyecto_juego.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-19T02:44:04.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form5.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form5.cs",
+              "RelativeDocumentMoniker": "Proyecto_juego\\Form5.cs",
+              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form5.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_juego\\Form5.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:19:14.376Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Form6.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form6.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form6.cs",
@@ -231,45 +258,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form6.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form6.cs",
-              "RelativeDocumentMoniker": "Proyecto_juego\\Form6.cs",
-              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form6.cs",
-              "RelativeToolTip": "Proyecto_juego\\Form6.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAACRAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form2.cs",
+              "RelativeDocumentMoniker": "Proyecto_juego\\Form2.cs",
+              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form2.cs",
+              "RelativeToolTip": "Proyecto_juego\\Form2.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAEwD8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T21:31:50.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-16T20:36:54.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Proyecto_juego",
-              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Proyecto_juego.csproj",
-              "RelativeDocumentMoniker": "Proyecto_juego\\Proyecto_juego.csproj",
-              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Proyecto_juego.csproj",
-              "RelativeToolTip": "Proyecto_juego\\Proyecto_juego.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-19T02:44:04.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Form4.Designer.cs",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form4.Designer.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form4.Designer.cs",
               "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form4.Designer.cs",
               "RelativeToolTip": "Proyecto_juego\\Form4.Designer.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAtwHEAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAtwHIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T19:58:32.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Form7.cs",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form7.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form7.cs",
@@ -282,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Form2.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form2.cs",
               "RelativeDocumentMoniker": "Proyecto_juego\\Form2.cs",
@@ -290,18 +304,6 @@
               "RelativeToolTip": "Proyecto_juego\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-16T20:36:45.637Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Form5.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form5.cs",
-              "RelativeDocumentMoniker": "Proyecto_juego\\Form5.cs",
-              "ToolTip": "C:\\Users\\USER\\juego-de-preguntas\\Proyecto_juego\\Proyecto_juego\\Form5.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_juego\\Form5.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T18:19:14.376Z",
-              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",

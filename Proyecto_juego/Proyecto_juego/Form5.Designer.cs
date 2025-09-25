@@ -34,6 +34,7 @@
             this.btnopcion3 = new System.Windows.Forms.Button();
             this.btnopcion2 = new System.Windows.Forms.Button();
             this.btnopcion1 = new System.Windows.Forms.Button();
+            this.lblpuntaje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +100,14 @@
             this.btnopcion1.UseVisualStyleBackColor = true;
             this.btnopcion1.Click += new System.EventHandler(this.btnopcion1_Click);
             // 
+            // lblpuntaje
+            // 
+            this.lblpuntaje.AutoSize = true;
+            this.lblpuntaje.Location = new System.Drawing.Point(65, 129);
+            this.lblpuntaje.Name = "lblpuntaje";
+            this.lblpuntaje.Size = new System.Drawing.Size(0, 13);
+            this.lblpuntaje.TabIndex = 16;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,6 +115,7 @@
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.WhatsApp_Image_2025_09_16_at_2_28_30_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblpuntaje);
             this.Controls.Add(this.btnopcion4);
             this.Controls.Add(this.btnopcion3);
             this.Controls.Add(this.btnopcion2);
@@ -117,6 +127,7 @@
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -128,5 +139,6 @@
         private System.Windows.Forms.Button btnopcion3;
         private System.Windows.Forms.Button btnopcion2;
         private System.Windows.Forms.Button btnopcion1;
+        private System.Windows.Forms.Label lblpuntaje;
     }
 }

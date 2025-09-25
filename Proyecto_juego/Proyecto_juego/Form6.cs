@@ -24,27 +24,27 @@ namespace Proyecto_juego
         string[,] preguntas_opciones = new string[,]
         {
             {"¿En qué año comenzó la Segunda Guerra Mundial en Europa?", "1938", "1945", "1939", "1941"},
-            {"¿Cuál es el nombre del actor que interpreta a Iron Man?", "Chris Evans", "Chris Hemsworth", " Robert Downey Jr", "Mark Ruffalo"},
-            {"¿En el anime Naruto, ¿cuál es el nombre completo del personaje conocido como 'Kakashi', el sensei del equipo 7?", "kakashi Sarutobi", "kakashi Senju", "Kakashi Uchiha", "Kakashi Hatake"},
-            {"¿En qué novela de J.R.R. Tolkien aparece por primera vez el personaje de Sméagol, más tarde conocido como Gollum?", "El Hobbit", "El Señor De Los Anillos", "El Silmalirion", "Los Hijos De Hurin"},
-            {"¿Quién es el dios nórdico del trueno, hijo de Odín y de la giganta Jörð?", "Loki", "Thor", "Balder", "Heidemal"},
-            {"¿En el anime Neon Genesis Evangelion, ¿cuál es el nombre de la organización paramilitar que opera los EVA para combatir a los Ángeles?", "Nerv", "Seele", "WILLE", "GHOST"},
-            {"¿Cuál es el único país de América del Sur que tiene costas en el Océano Pacífico y en el Océano Atlántico?", "Colombia", "Venezuela", "Chile", "Peru"},
-            {"¿Cuál es el nombre del director que filmó la película ¨El Padrino¨ y Apocalypse Now?", "Martin Scorsese", " Francis Ford Coppola", "Alfred Hitchcock", "Stanley Kubrick"},
+            {"¿Cuantas zonas horarias tiene Rusia?", "11", "8", "5", "7"},
+            {"¿Cuál es la flor nacional de Japón?", "Kiku", "Sakura", "Loto", "tsutsuji"},
+            {"¿En qué novela de J.R.R. Tolkien aparece por primera vez el personaje de Sméagol, más tarde conocido como Gollum?", "El Hobbit", "Star Wars", "El Silmalirion", "Los Hijos De Hurin"},
+            {"¿¿Qué filósofo griego fue el maestro de Alejandro Magno??", "Socrates", "Aristoteles", "Platón", "Demócrito"},
+            {"En el anime Neon Genesis Evangelion, ¿cuál es el nombre de la organización paramilitar que opera los EVA para combatir a los Ángeles?", "Nerv", "Seele", "WILLE", "GHOST"},
+            {"¿En qué año se estableció el gobierno de la República de Colombia?", "1810", "1821", "1819", "1830"},
+            {"¿Cuál es el nombre del director que filmó la película 'El Padrino y Apocalypse Now?'", "Martin Scorsese", " Francis F. Coppola", "Alfred Hitchcock", "Stanley Kubrick"},
             {"¿Cuál fue el nombre del héroe griego que derrotó al Minotauro en el laberinto de Creta?", "Hércules", "Teseo", "Perseo", "Ulises"},
-            {"¿En la serie de juegos ¨Metal Gear Solid¨, ¿cuál es el nombre del protagonista y espía conocido por el alias de 'Solid Snake?", " Big Boss", "Raiden", "Snake", "Kazuhira Miller"}
+            {"En la serie de juegos 'Metal Gear Solid', ¿Cuál es el nombre del protagonista y espía conocido por el alias de 'Solid Snake'?", " Big Boss", "Raiden", "Snake", "Kazuhira Miller"}
         };
 
         // Índice de la respuesta correcta para cada pregunta (0 a 3)
         int[] respuestas_correctas = new int[]//usamos un array para guardar las respuestas correctas
         {
             2, // 1939
-            2, // Robert Downey Jr.
-            3, // Kakashi Hatake
+            0, // 11
+            1, // Sakura
             0, // El Hobbit
-            1, // Thor
+            1, // Aristoteles
             0, // Nerv
-            0, // Colombia
+            0, // 1810
             0, // Francis Ford Coppola
             1, // Teseo
             2 // Snake

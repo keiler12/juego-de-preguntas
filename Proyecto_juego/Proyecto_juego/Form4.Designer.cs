@@ -38,6 +38,7 @@ namespace Proyecto_juego
             this.btnopcion4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnpausa = new System.Windows.Forms.Button();
+            this.lblpuntaje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +113,15 @@ namespace Proyecto_juego
             this.btnpausa.Text = "| |";
             this.btnpausa.UseVisualStyleBackColor = true;
             // 
+            // lblpuntaje
+            // 
+            this.lblpuntaje.AutoSize = true;
+            this.lblpuntaje.Location = new System.Drawing.Point(62, 155);
+            this.lblpuntaje.Name = "lblpuntaje";
+            this.lblpuntaje.Size = new System.Drawing.Size(55, 13);
+            this.lblpuntaje.TabIndex = 12;
+            this.lblpuntaje.Text = "Puntaje: 0";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,6 +129,7 @@ namespace Proyecto_juego
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.WhatsApp_Image_2025_09_16_at_2_28_30_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblpuntaje);
             this.Controls.Add(this.btnpausa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -132,6 +143,7 @@ namespace Proyecto_juego
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -148,5 +160,6 @@ namespace Proyecto_juego
         private System.Windows.Forms.Button btnopcion4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnpausa;
+        private System.Windows.Forms.Label lblpuntaje;
     }
 }

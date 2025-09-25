@@ -11,6 +11,8 @@ namespace Proyecto_juego
     {
         private SoundPlayer player;
         int indice_pregunta = 0;
+        private int indicePregunta = 0;
+        private int puntaje = 0;
 
         // Matriz: [pregunta, opción1, opción2, opción3, opción4]
         string[,] preguntas_opciones = new string[,]
@@ -107,6 +109,10 @@ namespace Proyecto_juego
                 label1.ForeColor = Color.LightSkyBlue;
                 label1.TextAlign = ContentAlignment.MiddleCenter;
 
+                lblpuntaje.BackColor = Color.Transparent;
+                lblpuntaje.Font = new Font("Century Gothic", 15, FontStyle.Bold);
+                lblpuntaje.ForeColor = Color.Black;
+                lblpuntaje.TextAlign = ContentAlignment.MiddleCenter;
 
                 btnopcion4.BackColor = Color.FromArgb(255, 135, 206, 250);
                 btnopcion4.FlatStyle = FlatStyle.Flat;
@@ -138,7 +144,7 @@ namespace Proyecto_juego
             }
             else
             {
-                MessageBox.Show("¡Has terminado todas las preguntas!");
+                MessageBox.Show($"¡Has terminado todas las preguntas!\n Tu puntaje final es: {puntaje}");
                 this.Close();
             }
         }
@@ -161,7 +167,8 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                MessageBox.Show("¡Respuesta correcta!");
+                puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos ");
             }
             else
             {
@@ -169,15 +176,18 @@ namespace Proyecto_juego
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
 
+            lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
 
         }
 
         private void btnmercurio_Click(object sender, EventArgs e)
-        { 
+        {
 
-        // Método único para todos los botones de opción
+            // Método único para todos los botones de opción
+
+
             Button btn = sender as Button;
             int opcion_seleccionada = 0;
 
@@ -190,7 +200,8 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                MessageBox.Show("¡Respuesta correcta!");
+                puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos");
             }
             else
             {
@@ -198,6 +209,7 @@ namespace Proyecto_juego
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
 
+            lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
         }
@@ -205,8 +217,9 @@ namespace Proyecto_juego
         private void btntierra_Click_1(object sender, EventArgs e)
         {
 
-        // Método único para todos los botones de opción
-        
+            // Método único para todos los botones de opción
+
+
             Button btn = sender as Button;
             int opcion_seleccionada = 0;
 
@@ -219,7 +232,8 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                MessageBox.Show("¡Respuesta correcta!");
+                puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos");
             }
             else
             {
@@ -227,6 +241,7 @@ namespace Proyecto_juego
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
 
+            lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
         }
@@ -236,6 +251,7 @@ namespace Proyecto_juego
 
             // Método único para todos los botones de opción
 
+
             Button btn = sender as Button;
             int opcion_seleccionada = 0;
 
@@ -248,7 +264,8 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                MessageBox.Show("¡Respuesta correcta!");
+                puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos");
             }
             else
             {
@@ -256,6 +273,7 @@ namespace Proyecto_juego
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
 
+            lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
         }
