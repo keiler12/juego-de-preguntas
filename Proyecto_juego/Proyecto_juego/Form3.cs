@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,11 +16,22 @@ namespace Proyecto_juego
     {
         int contador = 3;
         string modo_juego;
+        private SoundPlayer player;
 
         public Form3(string modo_juego)
         {
             InitializeComponent();
            this.modo_juego = modo_juego;
+        }
+
+        // Mueve el método fuera del constructor
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter || keyData == Keys.Space)
+            {
+                return true; // bloquea Enter y Space
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -32,8 +45,18 @@ namespace Proyecto_juego
             timer1.Interval = 1000;
             timer1.Start();
 
-          
-            
+
+            string tempFile = Path.Combine(Path.GetTempPath(), "musica-conteo.wav");
+            using (var resourceStream = Properties.Resources.musica_conteo)
+            using (var fileStream = File.Create(tempFile))
+            {
+                resourceStream.CopyTo(fileStream);
+            }
+
+            //Inicializar SoundPlayer
+            player = new SoundPlayer(tempFile);
+            player.PlayLooping(); // Reproduce en bucle
+
 
 
 

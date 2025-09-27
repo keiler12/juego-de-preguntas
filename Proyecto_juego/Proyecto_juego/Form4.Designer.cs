@@ -42,7 +42,12 @@ namespace Proyecto_juego
             this.lblpuntaje = new System.Windows.Forms.Label();
             this.lblTiempoPregunta = new System.Windows.Forms.Label();
             this.timerPreguntas = new System.Windows.Forms.Timer(this.components);
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.panelconteo = new System.Windows.Forms.Panel();
+            this.panelpuntaje = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelconteo.SuspendLayout();
+            this.panelpuntaje.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -50,10 +55,9 @@ namespace Proyecto_juego
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.MaximumSize = new System.Drawing.Size(0, 74);
+            this.label1.MaximumSize = new System.Drawing.Size(0, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1067, 74);
+            this.label1.Size = new System.Drawing.Size(800, 60);
             this.label1.TabIndex = 0;
             this.label1.Text = "Preguntas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -61,10 +65,9 @@ namespace Proyecto_juego
             // 
             // btnopcion1
             // 
-            this.btnopcion1.Location = new System.Drawing.Point(288, 410);
-            this.btnopcion1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion1.Location = new System.Drawing.Point(216, 333);
             this.btnopcion1.Name = "btnopcion1";
-            this.btnopcion1.Size = new System.Drawing.Size(135, 43);
+            this.btnopcion1.Size = new System.Drawing.Size(101, 35);
             this.btnopcion1.TabIndex = 6;
             this.btnopcion1.Text = "Opcion 1";
             this.btnopcion1.UseVisualStyleBackColor = true;
@@ -72,10 +75,9 @@ namespace Proyecto_juego
             // 
             // btnopcion2
             // 
-            this.btnopcion2.Location = new System.Drawing.Point(648, 410);
-            this.btnopcion2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion2.Location = new System.Drawing.Point(486, 333);
             this.btnopcion2.Name = "btnopcion2";
-            this.btnopcion2.Size = new System.Drawing.Size(136, 43);
+            this.btnopcion2.Size = new System.Drawing.Size(102, 35);
             this.btnopcion2.TabIndex = 7;
             this.btnopcion2.Text = "Opcion 2";
             this.btnopcion2.UseVisualStyleBackColor = true;
@@ -83,10 +85,9 @@ namespace Proyecto_juego
             // 
             // btnopcion3
             // 
-            this.btnopcion3.Location = new System.Drawing.Point(291, 496);
-            this.btnopcion3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion3.Location = new System.Drawing.Point(218, 403);
             this.btnopcion3.Name = "btnopcion3";
-            this.btnopcion3.Size = new System.Drawing.Size(132, 43);
+            this.btnopcion3.Size = new System.Drawing.Size(99, 35);
             this.btnopcion3.TabIndex = 8;
             this.btnopcion3.Text = "Opcion 3";
             this.btnopcion3.UseVisualStyleBackColor = true;
@@ -94,10 +95,9 @@ namespace Proyecto_juego
             // 
             // btnopcion4
             // 
-            this.btnopcion4.Location = new System.Drawing.Point(649, 496);
-            this.btnopcion4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion4.Location = new System.Drawing.Point(487, 403);
             this.btnopcion4.Name = "btnopcion4";
-            this.btnopcion4.Size = new System.Drawing.Size(135, 43);
+            this.btnopcion4.Size = new System.Drawing.Size(101, 35);
             this.btnopcion4.TabIndex = 9;
             this.btnopcion4.Text = "Opcion 4";
             this.btnopcion4.UseVisualStyleBackColor = true;
@@ -106,19 +106,17 @@ namespace Proyecto_juego
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(288, 78);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(216, 63);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(491, 304);
+            this.pictureBox1.Size = new System.Drawing.Size(368, 247);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
             // btnpausa
             // 
-            this.btnpausa.Location = new System.Drawing.Point(16, 15);
-            this.btnpausa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnpausa.Location = new System.Drawing.Point(12, 12);
             this.btnpausa.Name = "btnpausa";
-            this.btnpausa.Size = new System.Drawing.Size(59, 43);
+            this.btnpausa.Size = new System.Drawing.Size(44, 35);
             this.btnpausa.TabIndex = 11;
             this.btnpausa.Text = "| |";
             this.btnpausa.UseVisualStyleBackColor = true;
@@ -126,19 +124,20 @@ namespace Proyecto_juego
             // lblpuntaje
             // 
             this.lblpuntaje.AutoSize = true;
-            this.lblpuntaje.Location = new System.Drawing.Point(83, 191);
-            this.lblpuntaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblpuntaje.Location = new System.Drawing.Point(26, 11);
             this.lblpuntaje.Name = "lblpuntaje";
-            this.lblpuntaje.Size = new System.Drawing.Size(65, 16);
+            this.lblpuntaje.Size = new System.Drawing.Size(55, 13);
             this.lblpuntaje.TabIndex = 12;
             this.lblpuntaje.Text = "Puntaje: 0";
+            this.lblpuntaje.Click += new System.EventHandler(this.lblpuntaje_Click);
             // 
             // lblTiempoPregunta
             // 
             this.lblTiempoPregunta.AutoSize = true;
-            this.lblTiempoPregunta.Location = new System.Drawing.Point(928, 78);
+            this.lblTiempoPregunta.Location = new System.Drawing.Point(33, 6);
+            this.lblTiempoPregunta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTiempoPregunta.Name = "lblTiempoPregunta";
-            this.lblTiempoPregunta.Size = new System.Drawing.Size(48, 16);
+            this.lblTiempoPregunta.Size = new System.Drawing.Size(40, 13);
             this.lblTiempoPregunta.TabIndex = 13;
             this.lblTiempoPregunta.Text = "conteo";
             this.lblTiempoPregunta.Click += new System.EventHandler(this.lblTiempoPregunta_Click);
@@ -147,15 +146,31 @@ namespace Proyecto_juego
             // 
             this.timerPreguntas.Tick += new System.EventHandler(this.timerPreguntas_Tick);
             // 
+            // panelconteo
+            // 
+            this.panelconteo.Controls.Add(this.lblTiempoPregunta);
+            this.panelconteo.Location = new System.Drawing.Point(635, 63);
+            this.panelconteo.Name = "panelconteo";
+            this.panelconteo.Size = new System.Drawing.Size(125, 40);
+            this.panelconteo.TabIndex = 14;
+            // 
+            // panelpuntaje
+            // 
+            this.panelpuntaje.Controls.Add(this.lblpuntaje);
+            this.panelpuntaje.Location = new System.Drawing.Point(22, 63);
+            this.panelpuntaje.Name = "panelpuntaje";
+            this.panelpuntaje.Size = new System.Drawing.Size(158, 40);
+            this.panelpuntaje.TabIndex = 15;
+            // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.WhatsApp_Image_2025_09_16_at_2_28_30_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.lblTiempoPregunta);
-            this.Controls.Add(this.lblpuntaje);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panelpuntaje);
+            this.Controls.Add(this.panelconteo);
             this.Controls.Add(this.btnpausa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -164,13 +179,15 @@ namespace Proyecto_juego
             this.Controls.Add(this.btnopcion2);
             this.Controls.Add(this.btnopcion1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelconteo.ResumeLayout(false);
+            this.panelconteo.PerformLayout();
+            this.panelpuntaje.ResumeLayout(false);
+            this.panelpuntaje.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -190,5 +207,8 @@ namespace Proyecto_juego
         private System.Windows.Forms.Label lblpuntaje;
         private System.Windows.Forms.Label lblTiempoPregunta;
         private System.Windows.Forms.Timer timerPreguntas;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Panel panelconteo;
+        private System.Windows.Forms.Panel panelpuntaje;
     }
 }

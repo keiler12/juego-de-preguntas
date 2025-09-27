@@ -17,6 +17,17 @@ namespace Proyecto_juego
             InitializeComponent();
         }
 
+        // Mueve el método fuera del constructor
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter || keyData == Keys.Space)
+            {
+                return true; // bloquea Enter y Space
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+
         private void label4_Click(object sender, EventArgs e)
         {
 

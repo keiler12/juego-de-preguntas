@@ -73,6 +73,15 @@ namespace Proyecto_juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream musica_conteo {
+            get {
+                return ResourceManager.GetStream("musica_conteo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream musica_modo_facil {
             get {
                 return ResourceManager.GetStream("musica_modo_facil", resourceCulture);
@@ -404,6 +413,16 @@ namespace Proyecto_juego.Properties {
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_16_at_2_28_30_PM {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2025-09-16 at 2.28.30 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2025_09_27_at_1_44_44_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2025-09-27 at 1.44.44 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

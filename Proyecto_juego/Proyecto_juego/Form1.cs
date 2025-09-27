@@ -19,6 +19,18 @@ namespace Proyecto_juego
         public Form1()
         {
             InitializeComponent();
+
+            
+        }
+
+        // Mueve el método fuera del constructor
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter || keyData == Keys.Space)
+            {
+                return true; // bloquea Enter y Space
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,7 +42,7 @@ namespace Proyecto_juego
                 resourceStream.CopyTo(fileStream);
             }
 
-            //Inicializar SoundPlayer
+            //.Initialize SoundPlayer
             player = new SoundPlayer(tempFile);
             player.PlayLooping(); // Reproduce en bucle
 
@@ -114,5 +126,18 @@ namespace Proyecto_juego
             tutorial.Show();
             this.Hide();
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+
+        }
+
+
     }
 }

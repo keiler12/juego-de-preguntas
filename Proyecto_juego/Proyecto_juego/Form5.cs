@@ -81,15 +81,27 @@ namespace Proyecto_juego
             ordenPreguntas = Enumerable.Range(0, preguntas_opciones.GetLength(0)).OrderBy(x => rnd.Next()).ToArray();
         }
 
+        // Mueve el método fuera del constructor
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Enter || keyData == Keys.Space)
+            {
+                return true; // bloquea Enter y Space
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+
         private void Form5_Load(object sender, EventArgs e)
         {
             //aqui va el código de estilo
-
+            
             lblTiempoPregunta.Text = TIEMPO_PREGUNTA_MAXIMO.ToString();
             lblTiempoPregunta.Font = new Font("Century Gothic", 20, FontStyle.Bold);
-            lblTiempoPregunta.ForeColor = Color.Black;
+            lblTiempoPregunta.ForeColor = Color.DarkGreen;
             lblTiempoPregunta.TextAlign = ContentAlignment.MiddleCenter;
             lblTiempoPregunta.BackColor = Color.Transparent;
+            panelconteo.BackColor = Color.FromArgb(150, 255, 255, 255); // Fondo blanco semi-transparente
 
             MostrarPregunta();
             
@@ -139,6 +151,8 @@ namespace Proyecto_juego
                 lblpuntaje2.Font = new Font("Century Gothic", 15, FontStyle.Bold);
                 lblpuntaje2.ForeColor = Color.Black;
                 lblpuntaje2.TextAlign = ContentAlignment.MiddleCenter;
+
+                panelpuntaje.BackColor = Color.FromArgb(30, 144, 255);
 
                 btnopcion4.BackColor = Color.FromArgb(255, 135, 206, 250);
                 btnopcion4.FlatStyle = FlatStyle.Flat;
@@ -272,7 +286,7 @@ namespace Proyecto_juego
         private void btnopcion4_Click(object sender, EventArgs e)
         {
             timerPreguntas.Stop(); // Detenemos el temporizador al responder
-
+            
 
             Button btn = sender as Button;
             int opcion_seleccionada = 0;
@@ -316,7 +330,7 @@ namespace Proyecto_juego
 
             //  Actualizar la visualización y color
             lblTiempoPregunta.Text = tiempoRestante.ToString() + "s";
-            lblTiempoPregunta.ForeColor = Color.Black;
+            lblTiempoPregunta.ForeColor = Color.DarkGreen;
 
             // Iniciar el temporizador
             timerPreguntas.Start();

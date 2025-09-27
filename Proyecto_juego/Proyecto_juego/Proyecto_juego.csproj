@@ -285,5 +285,11 @@
   <ItemGroup>
     <None Include="Resources\preguntadificil7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2025-09-27 at 1.44.44 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musica-conteo.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
