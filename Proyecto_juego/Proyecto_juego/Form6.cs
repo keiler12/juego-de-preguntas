@@ -19,6 +19,9 @@ namespace Proyecto_juego
     {
         private SoundPlayer player;
         int indice_pregunta = 0;
+        private int puntaje = 0;
+        private const int TIEMPO_PREGUNTA_MAXIMO = 20;
+        private int tiempoRestante;
 
         // Matriz: [pregunta, opción1, opción2, opción3, opción4]
         string[,] preguntas_opciones = new string[,]
@@ -77,7 +80,17 @@ namespace Proyecto_juego
 
         private void Form6_Load(object sender, EventArgs e)
         {
+
+            // aqui va el código de estilo
+
+            lblTiempoPregunta.Text = TIEMPO_PREGUNTA_MAXIMO.ToString();
+            lblTiempoPregunta.Font = new Font("Century Gothic", 20, FontStyle.Bold);
+            lblTiempoPregunta.ForeColor = Color.Black;
+            lblTiempoPregunta.TextAlign = ContentAlignment.MiddleCenter;
+            lblTiempoPregunta.BackColor = Color.Transparent;
+
             MostrarPregunta();
+            
 
             string tempFile = Path.Combine(Path.GetTempPath(), "musica_modo_facil.wav");
             using (var resourceStream = Properties.Resources.musica_modo_facil)
@@ -89,6 +102,12 @@ namespace Proyecto_juego
             //Inicializar SoundPlayer
             player = new SoundPlayer(tempFile);
             player.PlayLooping(); // Reproduce en bucle
+
+            // Aqui iniciamos el temporizador para las preguntas
+            tiempoRestante = TIEMPO_PREGUNTA_MAXIMO;
+            lblTiempoPregunta.Text = tiempoRestante.ToString() + "s"; //aqui mostramos el restante de tiempo
+            timerPreguntas.Interval = 1000; // Intervalo de 1 segundo
+            timerPreguntas.Start(); // ¡Arranca el conteo de 20 segundo
         }
 
         private void MostrarPregunta()
@@ -110,6 +129,12 @@ namespace Proyecto_juego
                 labelpreguntas.ForeColor = Color.LightSkyBlue;
                 labelpreguntas.TextAlign = ContentAlignment.MiddleCenter;
 
+
+
+                lblpuntaje3.BackColor = Color.Transparent;
+                lblpuntaje3.Font = new Font("Century Gothic", 15, FontStyle.Bold);
+                lblpuntaje3.ForeColor = Color.Black;
+                lblpuntaje3.TextAlign = ContentAlignment.MiddleCenter;
 
                 btnopcion4.BackColor = Color.FromArgb(255, 135, 206, 250);
                 btnopcion4.FlatStyle = FlatStyle.Flat;
@@ -148,7 +173,7 @@ namespace Proyecto_juego
 
         private void btnopcion1_Click(object sender, EventArgs e)
         {
-            // Método único para todos los botones de opción
+            timerPreguntas.Stop(); // Detiene el temporizador al responder
 
 
             Button btn = sender as Button;
@@ -163,21 +188,24 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                MessageBox.Show("¡Respuesta correcta!");
+                 puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos ");
             }
             else
             {
                 MessageBox.Show("Respuesta incorrecta. La respuesta correcta es: " +
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
-
+            lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
+
         }
 
         private void btnopcion2_Click(object sender, EventArgs e)
         {
-            // Método único para todos los botones de opción
+            timerPreguntas.Stop(); // Detiene el temporizador al responder  
 
 
             Button btn = sender as Button;
@@ -192,21 +220,23 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                MessageBox.Show("¡Respuesta correcta!");
+                puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos ");
             }
             else
             {
                 MessageBox.Show("Respuesta incorrecta. La respuesta correcta es: " +
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
-
+            lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
         }
 
         private void btnopcion3_Click(object sender, EventArgs e)
         {
-            // Método único para todos los botones de opción
+           timerPreguntas.Stop(); // Detiene el temporizador al responder
 
 
             Button btn = sender as Button;
@@ -220,22 +250,24 @@ namespace Proyecto_juego
 
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
-            {
-                MessageBox.Show("¡Respuesta correcta!");
+            { 
+                puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos ");
             }
             else
             {
                 MessageBox.Show("Respuesta incorrecta. La respuesta correcta es: " +
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
-
+            lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
         }
 
         private void btnopcion4_Click(object sender, EventArgs e)
         {
-            // Método único para todos los botones de opción
+            timerPreguntas.Stop(); // Detiene el temporizador al responder
 
 
             Button btn = sender as Button;
@@ -250,21 +282,72 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                MessageBox.Show("¡Respuesta correcta!");
+                puntaje += 10;
+                MessageBox.Show("¡Respuesta correcta! +10 puntos ");
             }
             else
             {
                 MessageBox.Show("Respuesta incorrecta. La respuesta correcta es: " +
                     preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
             }
-
+            lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
         }
 
+        private void ResetearTemporizador()
+        {
+
+            // Detener el conteo actual
+            timerPreguntas.Stop();
+
+            // Restablecer el tiempo al máximo (20 segundos)
+            tiempoRestante = TIEMPO_PREGUNTA_MAXIMO;
+
+            //  Actualizar la visualización y color
+            lblTiempoPregunta.Text = tiempoRestante.ToString() + "s";
+            lblTiempoPregunta.ForeColor = Color.Black;
+
+            // Iniciar el temporizador
+            timerPreguntas.Start();
+
+        }
         private void labelpreguntas_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void timerPreguntas_Tick(object sender, EventArgs e)
+        {
+            if (tiempoRestante > 0)
+            {
+                tiempoRestante--;
+                lblTiempoPregunta.Text = tiempoRestante.ToString() + "s";
+
+                if (tiempoRestante <= 5)
+                {
+                    lblTiempoPregunta.ForeColor = Color.Yellow; // Alerta visual
+                }
+            }
+            else
+            {
+                // Mostramos un mensaje de tiempo agotado   
+                timerPreguntas.Stop();
+                MessageBox.Show("¡Tiempo Agotado! Pregunta no respondida.");
+
+                // 1. Mostrar la respuesta correcta
+                int idx = ordenPreguntas[indice_pregunta];
+                MessageBox.Show("La respuesta correcta era: " + preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
+
+                // 2. Avanzar pregunta
+                lblpuntaje3.Text = "Puntaje: " + puntaje;
+                indice_pregunta++;
+                MostrarPregunta();
+
+                // 3. Reiniciar el temporizador para la nueva pregunta
+                ResetearTemporizador();
+            }
         }
     }
 

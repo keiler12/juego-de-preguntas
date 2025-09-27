@@ -13,6 +13,8 @@ namespace Proyecto_juego
         int indice_pregunta = 0;
         private int indicePregunta = 0;
         private int puntaje = 0;
+        private const int TIEMPO_PREGUNTA_MAXIMO = 20;
+        private int tiempoRestante;
 
         // Matriz: [pregunta, opción1, opción2, opción3, opción4]
         string[,] preguntas_opciones = new string[,]
@@ -75,6 +77,12 @@ namespace Proyecto_juego
 
         private void Form4_Load(object sender, EventArgs e)
         {
+            //Aquí va el código de estilo
+            lblTiempoPregunta.Text = TIEMPO_PREGUNTA_MAXIMO.ToString();
+            lblTiempoPregunta.Font = new Font("Century Gothic", 20, FontStyle.Bold);
+            lblTiempoPregunta.ForeColor = Color.Black   ;
+            lblTiempoPregunta.TextAlign = ContentAlignment.MiddleCenter;
+            lblTiempoPregunta.BackColor = Color.Transparent;
             MostrarPregunta();
 
             string tempFile = Path.Combine(Path.GetTempPath(), "musica_modo_facil.wav");
@@ -87,6 +95,14 @@ namespace Proyecto_juego
             //Inicializar SoundPlayer
             player = new SoundPlayer(tempFile);
             player.PlayLooping(); // Reproduce en bucle
+
+            // Aqui iniciamos el temporizador para las preguntas
+            tiempoRestante = TIEMPO_PREGUNTA_MAXIMO;
+            lblTiempoPregunta.Text = tiempoRestante.ToString() + "s"; //aqui mostramos el restante de tiempo
+            timerPreguntas.Interval = 1000; // Intervalo de 1 segundo
+            timerPreguntas.Start(); // ¡Arranca el conteo de 20 segundo
+
+                                    
 
         }
 
@@ -151,7 +167,7 @@ namespace Proyecto_juego
 
         private void btnvenus_Click(object sender, EventArgs e)
         {
-
+            timerPreguntas.Stop(); // Detenemos el temporizador al responder
             // Método único para todos los botones de opción
 
 
@@ -179,14 +195,13 @@ namespace Proyecto_juego
             lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); // Reiniciamos el temporizador para la siguiente pregunta
 
         }
 
         private void btnmercurio_Click(object sender, EventArgs e)
         {
-
-            // Método único para todos los botones de opción
-
+            timerPreguntas.Stop(); // Detenemos el temporizador al responder
 
             Button btn = sender as Button;
             int opcion_seleccionada = 0;
@@ -212,14 +227,16 @@ namespace Proyecto_juego
             lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); // Reiniciamos el temporizador para la siguiente pregunta
         }
 
         private void btntierra_Click_1(object sender, EventArgs e)
         {
+            
+            //Aquí detenemos el temporizador al responder
+            timerPreguntas.Stop();
 
-            // Método único para todos los botones de opción
-
-
+          
             Button btn = sender as Button;
             int opcion_seleccionada = 0;
 
@@ -244,11 +261,12 @@ namespace Proyecto_juego
             lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); // Reiniciamos el temporizador para la siguiente pregunta
         }
 
         private void btnmarte_Click(object sender, EventArgs e)
         {
-
+            timerPreguntas.Stop(); // Detenemos el temporizador al responder
             // Método único para todos los botones de opción
 
 
@@ -276,6 +294,7 @@ namespace Proyecto_juego
             lblpuntaje.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
             MostrarPregunta();
+            ResetearTemporizador(); // Reiniciamos el temporizador para la siguiente pregunta   
         }
 
         private void label1_Paint(object sender, PaintEventArgs e)
@@ -283,6 +302,59 @@ namespace Proyecto_juego
         
         }
 
+        private void ResetearTemporizador()
+        {
+            // Detener el conteo actual
+            timerPreguntas.Stop();
+
+            // Restablecer el tiempo al máximo (20 segundos)
+            tiempoRestante = TIEMPO_PREGUNTA_MAXIMO;
+
+            //  Actualizar la visualización y color
+            lblTiempoPregunta.Text = tiempoRestante.ToString() + "s";
+            lblTiempoPregunta.ForeColor = Color.Black;
+
+            // Iniciar el temporizador
+            timerPreguntas.Start();
+        }
+
+        private void timerPreguntas_Tick(object sender, EventArgs e)
+        {
+
+            if (tiempoRestante > 0)
+            {
+                tiempoRestante--;
+                lblTiempoPregunta.Text = tiempoRestante.ToString() + "s";
+
+                if (tiempoRestante <= 5)
+                {
+                    lblTiempoPregunta.ForeColor = Color.Yellow; // Alerta visual
+                }
+            }
+            else
+            {
+                // Mostramos un mensaje de tiempo agotado   
+                timerPreguntas.Stop();
+                MessageBox.Show("¡Tiempo Agotado! Pregunta no respondida.");
+
+                // 1. Mostrar la respuesta correcta
+                int idx = ordenPreguntas[indice_pregunta];
+                MessageBox.Show("La respuesta correcta era: " + preguntas_opciones[idx, respuestas_correctas[idx] + 1]);
+
+                // 2. Avanzar pregunta
+                lblpuntaje.Text = "Puntaje: " + puntaje;
+                indice_pregunta++;
+                MostrarPregunta();
+
+                // 3. Reiniciar el temporizador para la nueva pregunta
+                ResetearTemporizador();
+            }
+        }
+
+        private void lblTiempoPregunta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
