@@ -22,6 +22,8 @@ namespace Proyecto_juego
         private int puntaje = 0;
         private const int TIEMPO_PREGUNTA_MAXIMO = 20;
         private int tiempoRestante;
+        private bool comodin5050Usado = false;
+        private bool comodinSaltarUsado = false;
 
         // Matriz: [pregunta, opción1, opción2, opción3, opción4]
         string[,] preguntas_opciones = new string[,]
@@ -101,10 +103,10 @@ namespace Proyecto_juego
             lblTiempoPregunta.TextAlign = ContentAlignment.MiddleCenter;
             lblTiempoPregunta.BackColor = Color.Transparent;
 
-            
+
             panelconteo.BackColor = Color.FromArgb(150, 255, 255, 255);
             MostrarPregunta();
-            
+
 
             string tempFile = Path.Combine(Path.GetTempPath(), "musica_modo_facil.wav");
             using (var resourceStream = Properties.Resources.musica_modo_facil)
@@ -150,7 +152,7 @@ namespace Proyecto_juego
                 lblpuntaje3.ForeColor = Color.Black;
                 lblpuntaje3.TextAlign = ContentAlignment.MiddleCenter;
 
-                panelpuntaje.BackColor = Color.FromArgb(30,144,255); 
+                panelpuntaje.BackColor = Color.FromArgb(30, 144, 255);
 
                 btnopcion4.BackColor = Color.FromArgb(255, 135, 206, 250);
                 btnopcion4.FlatStyle = FlatStyle.Flat;
@@ -165,6 +167,31 @@ namespace Proyecto_juego
                 btnopcion3.ForeColor = Color.Black;
                 btnopcion3.Font = new Font("Century Gothic", 12, FontStyle.Bold);
                 btnopcion3.Cursor = Cursors.Hand;
+
+
+
+                btn5050.Text = "50/50";
+                btn5050.BackColor = Color.FromArgb(255, 215, 0); // Amarillo Dorado brillante
+                btn5050.ForeColor = Color.Black; // Texto negro para alto contraste
+                btn5050.FlatStyle = FlatStyle.Flat;
+                btn5050.FlatAppearance.BorderSize = 2; // Borde más grueso para resaltar
+                btn5050.FlatAppearance.BorderColor = Color.White; // Borde blanco (clásico sobre rojo)
+                btn5050.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                btn5050.Cursor = Cursors.Hand;
+                btn5050.FlatAppearance.MouseDownBackColor = Color.FromArgb(200, 180, 0);
+
+
+
+                btnsaltar.Text = "Saltar Pregunta";
+                btnsaltar.BackColor = Color.FromArgb(0, 191, 255); // Cian/Azul Brillante
+                btnsaltar.ForeColor = Color.White; // Texto blanco
+                btnsaltar.FlatStyle = FlatStyle.Flat;
+                btnsaltar.FlatAppearance.BorderSize = 2;
+                btnsaltar.FlatAppearance.BorderColor = Color.White; // Borde blanco
+                btnsaltar.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                btnsaltar.Cursor = Cursors.Hand;
+                btnsaltar.FlatAppearance.MouseDownBackColor = Color.FromArgb(0, 150, 200);
+
 
                 btnopcion2.BackColor = Color.FromArgb(255, 135, 206, 250);
                 btnopcion2.FlatStyle = FlatStyle.Flat;
@@ -204,7 +231,7 @@ namespace Proyecto_juego
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
             {
-                 puntaje += 10;
+                puntaje += 10;
                 MessageBox.Show("¡Respuesta correcta! +10 puntos ");
             }
             else
@@ -214,7 +241,7 @@ namespace Proyecto_juego
             }
             lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
-            MostrarPregunta();
+            CargarSiguientePregunta(); //aqui cambiamos para que cargue la siguiente pregunta
             ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
 
         }
@@ -246,13 +273,13 @@ namespace Proyecto_juego
             }
             lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
-            MostrarPregunta();
+            CargarSiguientePregunta(); //aqui cambiamos para que cargue la siguiente pregunta
             ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
         }
 
         private void btnopcion3_Click(object sender, EventArgs e)
         {
-           timerPreguntas.Stop(); // Detiene el temporizador al responder
+            timerPreguntas.Stop(); // Detiene el temporizador al responder
 
 
             Button btn = sender as Button;
@@ -266,7 +293,7 @@ namespace Proyecto_juego
 
             int idx = ordenPreguntas[indice_pregunta];
             if (opcion_seleccionada == respuestas_correctas[idx])
-            { 
+            {
                 puntaje += 10;
                 MessageBox.Show("¡Respuesta correcta! +10 puntos ");
             }
@@ -277,7 +304,7 @@ namespace Proyecto_juego
             }
             lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
-            MostrarPregunta();
+            CargarSiguientePregunta(); //aqui cambiamos para que cargue la siguiente pregunta
             ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
         }
 
@@ -308,7 +335,7 @@ namespace Proyecto_juego
             }
             lblpuntaje3.Text = "Puntaje: " + puntaje;
             indice_pregunta++;
-            MostrarPregunta();
+            CargarSiguientePregunta(); //aqui cambiamos para que cargue la siguiente pregunta
             ResetearTemporizador(); //Aquí reiniciamos el temporizador para la siguiente pregunta
         }
 
@@ -365,8 +392,106 @@ namespace Proyecto_juego
                 ResetearTemporizador();
             }
         }
+
+        private void CargarSiguientePregunta()
+        {
+
+            // 1. Mostrar todos los botones (Resetea el efecto del comodín 50/50)
+            // Esto es esencial para que la nueva pregunta tenga las 4 opciones visibles.
+            btnopcion1.Visible = true;
+            btnopcion2.Visible = true;
+            btnopcion3.Visible = true;
+            btnopcion4.Visible = true;
+
+            // 2. Verificar si se acabaron las preguntas
+            if (indice_pregunta >= preguntas_opciones.GetLength(0))
+            {
+                // El juego terminó.
+                MessageBox.Show($"¡Has terminado todas las preguntas!\n Tu puntaje final es: {puntaje}");
+
+                // Aquí debes llamar a la función que finaliza tu juego y vuelve al inicio (Ajusta si tienes 'formInicio'):
+                // formInicio.Show(); 
+                this.Close();
+                return;
+            }
+
+            // 3. Llama al método original para cargar el contenido, imágenes y estilos
+            // MostrarPregunta() se encargará de todo lo que ya tienes.
+            MostrarPregunta();
+        }
+
+        private void btnsaltar_Click(object sender, EventArgs e)
+        {
+
+            if (comodinSaltarUsado)
+            {
+                MessageBox.Show("El comodín Saltar Pregunta ya fue usado.");
+                return;
+            }
+
+            comodinSaltarUsado = true;
+            btnsaltar.Enabled = false;
+
+            // Usamos tu variable principal
+            indice_pregunta++;
+
+            // Llama al método que resetea y luego llama a MostrarPregunta()
+            CargarSiguientePregunta();
+        }
+
+        private void btn5050_Click(object sender, EventArgs e)
+        {
+            if (comodin5050Usado)
+            {
+                MessageBox.Show("El comodín 50/50 ya fue usado.");
+                return;
+            }
+
+            // 1. Marcar como usado y deshabilitar el botón visualmente
+            comodin5050Usado = true;
+            btn5050.Enabled = false;
+
+            // --- Lógica para obtener la Respuesta Correcta ---
+
+            // Obtener el índice de la pregunta actual del array ORDENADO
+            int idx_original = ordenPreguntas[indice_pregunta];
+
+            // El valor de la respuesta correcta es:
+            // La fila de la pregunta (idx_original)
+            // + La columna de la opción correcta: que es el valor de respuestas_correctas[idx_original] + 1
+            // (+1 porque respuestas_correctas usa 0-3 y preguntas_opciones usa 1-4 para las opciones)
+            int columnaRespuestaCorrecta = respuestas_correctas[idx_original] + 1;
+            string respuestaCorrecta = preguntas_opciones[idx_original, columnaRespuestaCorrecta];
+
+            // --- Lógica de Ocultar Botones ---
+
+            // 3. Crear una lista de todos los botones de respuesta
+            Button[] botonesRespuesta = { btnopcion1, btnopcion2, btnopcion3, btnopcion4 };
+
+            // 4. Buscar y ocultar dos opciones incorrectas
+            Random rnd = new Random();
+            int opcionesOcultadas = 0;
+
+            while (opcionesOcultadas < 2)
+            {
+                int indiceBoton = rnd.Next(0, botonesRespuesta.Length);
+                Button boton = botonesRespuesta[indiceBoton];
+
+                // La condición: Que el texto del botón NO sea la respuesta correcta Y que NO esté ya oculto.
+                if (boton.Text != respuestaCorrecta && boton.Visible)
+                {
+                    boton.Visible = false;
+                    opcionesOcultadas++;
+
+                }
+            }
+        }
     }
-
-
-
 }
+ 
+
+
+
+
+
+
