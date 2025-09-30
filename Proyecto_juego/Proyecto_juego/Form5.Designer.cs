@@ -43,6 +43,7 @@
             this.lblTiempoPregunta = new System.Windows.Forms.Label();
             this.btnsaltar = new System.Windows.Forms.Button();
             this.btn5050 = new System.Windows.Forms.Button();
+            this.btnpausa = new System.Windows.Forms.Button();
             this.panelpuntaje.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelconteo.SuspendLayout();
@@ -53,10 +54,9 @@
             this.labelpreguntas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelpreguntas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelpreguntas.Location = new System.Drawing.Point(0, 0);
-            this.labelpreguntas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelpreguntas.MaximumSize = new System.Drawing.Size(0, 74);
+            this.labelpreguntas.MaximumSize = new System.Drawing.Size(0, 60);
             this.labelpreguntas.Name = "labelpreguntas";
-            this.labelpreguntas.Size = new System.Drawing.Size(1067, 74);
+            this.labelpreguntas.Size = new System.Drawing.Size(800, 60);
             this.labelpreguntas.TabIndex = 1;
             this.labelpreguntas.Text = "Preguntas";
             this.labelpreguntas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,10 +64,9 @@
             // 
             // btnopcion4
             // 
-            this.btnopcion4.Location = new System.Drawing.Point(665, 484);
-            this.btnopcion4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion4.Location = new System.Drawing.Point(499, 393);
             this.btnopcion4.Name = "btnopcion4";
-            this.btnopcion4.Size = new System.Drawing.Size(220, 55);
+            this.btnopcion4.Size = new System.Drawing.Size(165, 45);
             this.btnopcion4.TabIndex = 15;
             this.btnopcion4.Text = "Opcion 4";
             this.btnopcion4.UseVisualStyleBackColor = true;
@@ -75,10 +74,9 @@
             // 
             // btnopcion3
             // 
-            this.btnopcion3.Location = new System.Drawing.Point(665, 410);
-            this.btnopcion3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion3.Location = new System.Drawing.Point(499, 333);
             this.btnopcion3.Name = "btnopcion3";
-            this.btnopcion3.Size = new System.Drawing.Size(220, 53);
+            this.btnopcion3.Size = new System.Drawing.Size(165, 43);
             this.btnopcion3.TabIndex = 14;
             this.btnopcion3.Text = "Opcion 3";
             this.btnopcion3.UseVisualStyleBackColor = true;
@@ -86,10 +84,9 @@
             // 
             // btnopcion2
             // 
-            this.btnopcion2.Location = new System.Drawing.Point(205, 484);
-            this.btnopcion2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion2.Location = new System.Drawing.Point(154, 393);
             this.btnopcion2.Name = "btnopcion2";
-            this.btnopcion2.Size = new System.Drawing.Size(220, 55);
+            this.btnopcion2.Size = new System.Drawing.Size(165, 45);
             this.btnopcion2.TabIndex = 13;
             this.btnopcion2.Text = "Opcion 2";
             this.btnopcion2.UseVisualStyleBackColor = true;
@@ -97,10 +94,9 @@
             // 
             // btnopcion1
             // 
-            this.btnopcion1.Location = new System.Drawing.Point(205, 407);
-            this.btnopcion1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnopcion1.Location = new System.Drawing.Point(154, 331);
             this.btnopcion1.Name = "btnopcion1";
-            this.btnopcion1.Size = new System.Drawing.Size(220, 55);
+            this.btnopcion1.Size = new System.Drawing.Size(165, 45);
             this.btnopcion1.TabIndex = 12;
             this.btnopcion1.Text = "Opcion 1";
             this.btnopcion1.UseVisualStyleBackColor = true;
@@ -109,10 +105,9 @@
             // lblpuntaje
             // 
             this.lblpuntaje.AutoSize = true;
-            this.lblpuntaje.Location = new System.Drawing.Point(87, 159);
-            this.lblpuntaje.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblpuntaje.Location = new System.Drawing.Point(65, 129);
             this.lblpuntaje.Name = "lblpuntaje";
-            this.lblpuntaje.Size = new System.Drawing.Size(0, 16);
+            this.lblpuntaje.Size = new System.Drawing.Size(0, 13);
             this.lblpuntaje.TabIndex = 16;
             // 
             // timerPreguntas
@@ -122,56 +117,52 @@
             // panelpuntaje
             // 
             this.panelpuntaje.Controls.Add(this.lblpuntaje2);
-            this.panelpuntaje.Location = new System.Drawing.Point(16, 100);
-            this.panelpuntaje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelpuntaje.Location = new System.Drawing.Point(12, 81);
             this.panelpuntaje.Name = "panelpuntaje";
-            this.panelpuntaje.Size = new System.Drawing.Size(211, 49);
+            this.panelpuntaje.Size = new System.Drawing.Size(158, 40);
             this.panelpuntaje.TabIndex = 19;
             // 
             // lblpuntaje2
             // 
             this.lblpuntaje2.AutoSize = true;
-            this.lblpuntaje2.Location = new System.Drawing.Point(35, 14);
-            this.lblpuntaje2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblpuntaje2.Location = new System.Drawing.Point(26, 11);
             this.lblpuntaje2.Name = "lblpuntaje2";
-            this.lblpuntaje2.Size = new System.Drawing.Size(65, 16);
+            this.lblpuntaje2.Size = new System.Drawing.Size(55, 13);
             this.lblpuntaje2.TabIndex = 12;
             this.lblpuntaje2.Text = "Puntaje: 0";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(259, 78);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(194, 63);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(579, 304);
+            this.pictureBox1.Size = new System.Drawing.Size(434, 247);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
             // panelconteo
             // 
             this.panelconteo.Controls.Add(this.lblTiempoPregunta);
-            this.panelconteo.Location = new System.Drawing.Point(875, 100);
-            this.panelconteo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelconteo.Location = new System.Drawing.Point(656, 81);
             this.panelconteo.Name = "panelconteo";
-            this.panelconteo.Size = new System.Drawing.Size(167, 49);
+            this.panelconteo.Size = new System.Drawing.Size(125, 40);
             this.panelconteo.TabIndex = 20;
             // 
             // lblTiempoPregunta
             // 
             this.lblTiempoPregunta.AutoSize = true;
-            this.lblTiempoPregunta.Location = new System.Drawing.Point(44, 7);
+            this.lblTiempoPregunta.Location = new System.Drawing.Point(33, 6);
+            this.lblTiempoPregunta.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTiempoPregunta.Name = "lblTiempoPregunta";
-            this.lblTiempoPregunta.Size = new System.Drawing.Size(48, 16);
+            this.lblTiempoPregunta.Size = new System.Drawing.Size(40, 13);
             this.lblTiempoPregunta.TabIndex = 13;
             this.lblTiempoPregunta.Text = "conteo";
             // 
             // btnsaltar
             // 
-            this.btnsaltar.Location = new System.Drawing.Point(875, 180);
-            this.btnsaltar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsaltar.Location = new System.Drawing.Point(656, 146);
             this.btnsaltar.Name = "btnsaltar";
-            this.btnsaltar.Size = new System.Drawing.Size(122, 45);
+            this.btnsaltar.Size = new System.Drawing.Size(92, 37);
             this.btnsaltar.TabIndex = 21;
             this.btnsaltar.Text = "Saltar";
             this.btnsaltar.UseVisualStyleBackColor = true;
@@ -179,22 +170,33 @@
             // 
             // btn5050
             // 
-            this.btn5050.Location = new System.Drawing.Point(875, 251);
-            this.btn5050.Margin = new System.Windows.Forms.Padding(4);
+            this.btn5050.Location = new System.Drawing.Point(656, 204);
             this.btn5050.Name = "btn5050";
-            this.btn5050.Size = new System.Drawing.Size(122, 45);
+            this.btn5050.Size = new System.Drawing.Size(92, 37);
             this.btn5050.TabIndex = 22;
             this.btn5050.Text = "50/50";
             this.btn5050.UseVisualStyleBackColor = true;
             this.btn5050.Click += new System.EventHandler(this.btn50502_Click);
             // 
+            // btnpausa
+            // 
+            this.btnpausa.Location = new System.Drawing.Point(12, 177);
+            this.btnpausa.Name = "btnpausa";
+            this.btnpausa.Size = new System.Drawing.Size(54, 45);
+            this.btnpausa.TabIndex = 23;
+            this.btnpausa.Text = "| |";
+            this.btnpausa.UseVisualStyleBackColor = true;
+            this.btnpausa.Click += new System.EventHandler(this.btnpausa_Click);
+            // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.WhatsApp_Image_2025_09_16_at_2_28_30_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnpausa);
             this.Controls.Add(this.btn5050);
             this.Controls.Add(this.btnsaltar);
             this.Controls.Add(this.panelconteo);
@@ -206,7 +208,6 @@
             this.Controls.Add(this.btnopcion2);
             this.Controls.Add(this.btnopcion1);
             this.Controls.Add(this.labelpreguntas);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form5";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
@@ -236,5 +237,6 @@
         private System.Windows.Forms.Label lblTiempoPregunta;
         private System.Windows.Forms.Button btnsaltar;
         private System.Windows.Forms.Button btn5050;
+        private System.Windows.Forms.Button btnpausa;
     }
 }

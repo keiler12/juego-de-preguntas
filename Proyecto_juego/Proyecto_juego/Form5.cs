@@ -170,7 +170,12 @@ namespace Proyecto_juego
                 btnopcion3.Font = new Font("Century Gothic", 12, FontStyle.Bold);
                 btnopcion3.Cursor = Cursors.Hand;
 
-
+                btnpausa.Font = new Font("Century Gothic", 14, FontStyle.Bold);
+                btnpausa.ForeColor = Color.White; // Texto en blanco
+                btnpausa.BackColor = Color.FromArgb(220, 50, 50); // Rojo elegante
+                btnpausa.FlatStyle = FlatStyle.Flat;
+                btnpausa.FlatAppearance.BorderSize = 0;
+                btnpausa.Cursor = Cursors.Hand;
 
                 btn5050.Text = "50/50";
                 btn5050.BackColor = Color.FromArgb(255, 215, 0); // Amarillo Dorado brillante
@@ -397,28 +402,24 @@ namespace Proyecto_juego
 
         private void CargarSiguientePregunta()
         {
-
-            // 1. Mostrar todos los botones (Resetea el efecto del comodín 50/50)
-            // Esto es esencial para que la nueva pregunta tenga las 4 opciones visibles.
             btnopcion1.Visible = true;
             btnopcion2.Visible = true;
             btnopcion3.Visible = true;
             btnopcion4.Visible = true;
 
-            // 2. Verificar si se acabaron las preguntas
             if (indice_pregunta >= preguntas_opciones.GetLength(0))
             {
-                // El juego terminó.
-                MessageBox.Show($"¡Has terminado todas las preguntas!\n Tu puntaje final es: {puntaje}");
+                MessageBox.Show($"¡Has terminado todas las preguntas!\n Tu puntaje final es: {puntaje}\n¿Te le mides a otro nivel o es todo por hoy?");
 
-                // Aquí debes llamar a la función que finaliza tu juego y vuelve al inicio (Ajusta si tienes 'formInicio'):
-                // formInicio.Show(); 
-                this.Close();
+                timerPreguntas.Stop();
+                timerPreguntas.Tick -= timerPreguntas_Tick;
+
+                Form2 menu_nivel = new Form2();
+                menu_nivel.Show();
+                this.Hide();
                 return;
             }
 
-            // 3. Llama al método original para cargar el contenido, imágenes y estilos
-            // MostrarPregunta() se encargará de todo lo que ya tienes.
             MostrarPregunta();
         }
 
@@ -486,6 +487,33 @@ namespace Proyecto_juego
                     opcionesOcultadas++;
 
                 }
+            }
+        }
+
+        private void btnpausa_Click(object sender, EventArgs e)
+        {
+            // Detener el temporizador antes de mostrar el MessageBox
+            timerPreguntas.Stop();
+
+            var resultado = MessageBox.Show(
+                "¿Desea ir al menú principal?",
+                "Pausa...",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button3);
+
+            if (resultado == DialogResult.Yes)
+            {
+                timerPreguntas.Tick -= timerPreguntas_Tick;
+                Form1 menu_principal = new Form1();
+                menu_principal.Show();
+                this.Hide();
+                return;
+            }
+            else
+            {
+                // Si el usuario elige "No", reanudar el temporizador
+                timerPreguntas.Start();
             }
         }
     }

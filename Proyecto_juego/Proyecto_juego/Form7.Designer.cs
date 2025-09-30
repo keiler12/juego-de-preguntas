@@ -32,18 +32,18 @@
             this.lblinstrucciones = new System.Windows.Forms.Label();
             this.lblniveles = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbltextoniveles = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbltextocontador = new System.Windows.Forms.Label();
+            this.lbltextocomodines = new System.Windows.Forms.Label();
             this.lblcomodines = new System.Windows.Forms.Label();
+            this.lbltextocontador = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.lblcontador = new System.Windows.Forms.Label();
-            this.lbltextoniveles = new System.Windows.Forms.Label();
-            this.lbltextocomodines = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.lblpuntaje = new System.Windows.Forms.Label();
             this.lbltextopuntaje = new System.Windows.Forms.Label();
+            this.lblpuntaje = new System.Windows.Forms.Label();
             this.btnatras = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -81,6 +81,15 @@
             this.panel1.Size = new System.Drawing.Size(504, 107);
             this.panel1.TabIndex = 2;
             // 
+            // lbltextoniveles
+            // 
+            this.lbltextoniveles.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltextoniveles.Location = new System.Drawing.Point(12, 27);
+            this.lbltextoniveles.Name = "lbltextoniveles";
+            this.lbltextoniveles.Size = new System.Drawing.Size(480, 73);
+            this.lbltextoniveles.TabIndex = 3;
+            this.lbltextoniveles.Text = resources.GetString("lbltextoniveles.Text");
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -99,15 +108,14 @@
             this.panel2.Size = new System.Drawing.Size(504, 141);
             this.panel2.TabIndex = 3;
             // 
-            // lbltextocontador
+            // lbltextocomodines
             // 
-            this.lbltextocontador.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltextocontador.Location = new System.Drawing.Point(12, 26);
-            this.lbltextocontador.Name = "lbltextocontador";
-            this.lbltextocontador.Size = new System.Drawing.Size(467, 117);
-            this.lbltextocontador.TabIndex = 2;
-            this.lbltextocontador.Text = resources.GetString("lbltextocontador.Text");
-            this.lbltextocontador.Click += new System.EventHandler(this.label4_Click);
+            this.lbltextocomodines.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltextocomodines.Location = new System.Drawing.Point(12, 26);
+            this.lbltextocomodines.Name = "lbltextocomodines";
+            this.lbltextocomodines.Size = new System.Drawing.Size(467, 105);
+            this.lbltextocomodines.TabIndex = 3;
+            this.lbltextocomodines.Text = resources.GetString("lbltextocomodines.Text");
             // 
             // lblcomodines
             // 
@@ -118,6 +126,16 @@
             this.lblcomodines.Size = new System.Drawing.Size(84, 16);
             this.lblcomodines.TabIndex = 1;
             this.lblcomodines.Text = "Comodines:";
+            // 
+            // lbltextocontador
+            // 
+            this.lbltextocontador.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltextocontador.Location = new System.Drawing.Point(12, 26);
+            this.lbltextocontador.Name = "lbltextocontador";
+            this.lbltextocontador.Size = new System.Drawing.Size(467, 117);
+            this.lbltextocontador.TabIndex = 2;
+            this.lbltextocontador.Text = resources.GetString("lbltextocontador.Text");
+            this.lbltextocontador.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel3
             // 
@@ -148,24 +166,6 @@
             this.lblcontador.TabIndex = 1;
             this.lblcontador.Text = "Contador:";
             // 
-            // lbltextoniveles
-            // 
-            this.lbltextoniveles.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltextoniveles.Location = new System.Drawing.Point(12, 27);
-            this.lbltextoniveles.Name = "lbltextoniveles";
-            this.lbltextoniveles.Size = new System.Drawing.Size(480, 73);
-            this.lbltextoniveles.TabIndex = 3;
-            this.lbltextoniveles.Text = resources.GetString("lbltextoniveles.Text");
-            // 
-            // lbltextocomodines
-            // 
-            this.lbltextocomodines.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltextocomodines.Location = new System.Drawing.Point(12, 26);
-            this.lbltextocomodines.Name = "lbltextocomodines";
-            this.lbltextocomodines.Size = new System.Drawing.Size(467, 105);
-            this.lbltextocomodines.TabIndex = 3;
-            this.lbltextocomodines.Text = resources.GetString("lbltextocomodines.Text");
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.lbltextopuntaje);
@@ -174,6 +174,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(504, 122);
             this.panel4.TabIndex = 5;
+            // 
+            // lbltextopuntaje
+            // 
+            this.lbltextopuntaje.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltextopuntaje.Location = new System.Drawing.Point(12, 29);
+            this.lbltextopuntaje.Name = "lbltextopuntaje";
+            this.lbltextopuntaje.Size = new System.Drawing.Size(433, 69);
+            this.lbltextopuntaje.TabIndex = 3;
+            this.lbltextopuntaje.Text = resources.GetString("lbltextopuntaje.Text");
             // 
             // lblpuntaje
             // 
@@ -184,15 +193,6 @@
             this.lblpuntaje.Size = new System.Drawing.Size(59, 16);
             this.lblpuntaje.TabIndex = 3;
             this.lblpuntaje.Text = "Puntaje:";
-            // 
-            // lbltextopuntaje
-            // 
-            this.lbltextopuntaje.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltextopuntaje.Location = new System.Drawing.Point(12, 29);
-            this.lbltextopuntaje.Name = "lbltextopuntaje";
-            this.lbltextopuntaje.Size = new System.Drawing.Size(433, 69);
-            this.lbltextopuntaje.TabIndex = 3;
-            this.lbltextopuntaje.Text = resources.GetString("lbltextopuntaje.Text");
             // 
             // btnatras
             // 
@@ -211,6 +211,7 @@
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.WhatsApp_Image_2025_09_16_at_2_28_30_PM;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(601, 628);
+            this.ControlBox = false;
             this.Controls.Add(this.btnatras);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);

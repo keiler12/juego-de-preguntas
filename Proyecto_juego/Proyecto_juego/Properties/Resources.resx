@@ -229,4 +229,10 @@
   <data name="musica_conteo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\musica-conteo.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="respuesta_correcta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\correcto-Efecto-de-sonido.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="respuesta_incorrecta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\incorrect-293358.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

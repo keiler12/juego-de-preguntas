@@ -291,5 +291,11 @@
   <ItemGroup>
     <None Include="Resources\musica-conteo.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correcto-Efecto-de-sonido.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incorrect-293358.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

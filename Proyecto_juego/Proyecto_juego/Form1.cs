@@ -85,7 +85,15 @@ namespace Proyecto_juego
             btntutorial.Font = new Font("Century Gothic", 12, FontStyle.Bold);
             btntutorial.Cursor = Cursors.Hand;
 
-            // 🪟 Panel central 
+            //Botón salir
+            btnsalir.BackColor = Color.FromArgb(52, 152, 219);
+            btnsalir.FlatStyle = FlatStyle.Flat;
+            btnsalir.FlatAppearance.BorderSize = 0;
+            btnsalir.ForeColor = Color.White;
+            btnsalir.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+            btnsalir.Cursor = Cursors.Hand;
+
+            //  Panel central 
             panel1.BackColor = Color.FromArgb(180, 255, 255, 255); // semi-transparente
         }
 
@@ -138,6 +146,12 @@ namespace Proyecto_juego
 
         }
 
-
+        private void btnsalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea salir de aplicación ?", "Exit...", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

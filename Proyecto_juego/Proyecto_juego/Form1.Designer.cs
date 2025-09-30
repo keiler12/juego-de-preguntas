@@ -35,6 +35,7 @@
             this.lblbienvenido = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnsalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,6 +113,17 @@
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnsalir
+            // 
+            this.btnsalir.FlatAppearance.BorderSize = 0;
+            this.btnsalir.Location = new System.Drawing.Point(729, 12);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(152, 29);
+            this.btnsalir.TabIndex = 6;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -119,6 +131,8 @@
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.istockphoto_1342416557_612x612;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(893, 563);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnsalir);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblkeiler);
             this.Controls.Add(this.lblandres);
@@ -144,6 +158,7 @@
         private System.Windows.Forms.Label lblbienvenido;
         private System.Windows.Forms.Label lblnombre;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnsalir;
     }
 }
 

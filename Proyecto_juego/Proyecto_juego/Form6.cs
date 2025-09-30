@@ -200,6 +200,14 @@ namespace Proyecto_juego
                 btnopcion2.Font = new Font("Century Gothic", 12, FontStyle.Bold);
                 btnopcion2.Cursor = Cursors.Hand;
 
+
+                btnpausa.Font = new Font("Century Gothic", 14, FontStyle.Bold);
+                btnpausa.ForeColor = Color.White; // Texto en blanco
+                btnpausa.BackColor = Color.FromArgb(220, 50, 50); // Rojo elegante
+                btnpausa.FlatStyle = FlatStyle.Flat;
+                btnpausa.FlatAppearance.BorderSize = 0;
+                btnpausa.Cursor = Cursors.Hand;
+
                 btnopcion1.BackColor = Color.FromArgb(255, 135, 206, 250);
                 btnopcion1.FlatStyle = FlatStyle.Flat;
                 btnopcion1.FlatAppearance.BorderSize = 0;
@@ -406,8 +414,7 @@ namespace Proyecto_juego
             // 2. Verificar si se acabaron las preguntas
             if (indice_pregunta >= preguntas_opciones.GetLength(0))
             {
-                // El juego terminó.
-                MessageBox.Show($"¡Has terminado todas las preguntas!\n Tu puntaje final es: {puntaje}");
+                MessageBox.Show($"¡Has terminado todas las preguntas!\n Tu puntaje final es: {puntaje}\n¿Te le mides a otro nivel o es todo por hoy?");
 
                 // Aquí debes llamar a la función que finaliza tu juego y vuelve al inicio (Ajusta si tienes 'formInicio'):
                 // formInicio.Show(); 
@@ -486,12 +493,32 @@ namespace Proyecto_juego
                 }
             }
         }
+
+        private void btnpausa_Click(object sender, EventArgs e)
+        {
+            // Detener el temporizador antes de mostrar el MessageBox
+            timerPreguntas.Stop();
+
+            var resultado = MessageBox.Show(
+                "¿Desea ir al menú principal?",
+                "Pausa...",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button3);
+
+            if (resultado == DialogResult.Yes)
+            {
+                timerPreguntas.Tick -= timerPreguntas_Tick;
+                Form1 menu_principal = new Form1();
+                menu_principal.Show();
+                this.Hide();
+                return;
+            }
+            else
+            {
+                // Si el usuario elige "No", reanudar el temporizador
+                timerPreguntas.Start();
+            }
+        }
     }
 }
- 
-
-
-
-
-
-

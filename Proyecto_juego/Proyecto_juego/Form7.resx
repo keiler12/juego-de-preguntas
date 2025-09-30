@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lbltextocontador.Text" xml:space="preserve">
-    <value>Una vez seleccionado el nivel de dificultad, se mostrará una pantalla de preparación con un contador regresivo de 3 segundos antes de iniciar la partida. Durante el desarrollo del juego, cada pregunta contará con un límite de tiempo de 20 segundos para ser respondida. Este mecanismo busca mantener el ritmo dinámico y desafiante de la experiencia.</value>
-  </data>
   <data name="lbltextoniveles.Text" xml:space="preserve">
     <value>Antes de iniciar el juego, el jugador debe seleccionar un nivel de dificultad. Cada nivel está compuesto por tres fases: fácil, intermedio y difícil. Cada fase incluye un conjunto de 10 preguntas diseñadas para evaluar progresivamente el conocimiento y habilidades del jugador.</value>
   </data>
   <data name="lbltextocomodines.Text" xml:space="preserve">
     <value>Cada jugador dispondrá de dos comodines por nivel. Estos comodines podrán ser utilizados durante el desarrollo de las preguntas correspondientes a dicho nivel. En caso de que el jugador decida avanzar al siguiente nivel, los comodines serán restaurados, siempre y cuando haya respondido correctamente todas las preguntas del nivel actual.</value>
+  </data>
+  <data name="lbltextocontador.Text" xml:space="preserve">
+    <value>Una vez seleccionado el nivel de dificultad, se mostrará una pantalla de preparación con un contador regresivo de 3 segundos antes de iniciar la partida. Durante el desarrollo del juego, cada pregunta contará con un límite de tiempo de 20 segundos para ser respondida. Este mecanismo busca mantener el ritmo dinámico y desafiante de la experiencia.</value>
   </data>
   <data name="lbltextopuntaje.Text" xml:space="preserve">
     <value>Cada respuesta correcta otorgará al jugador 10 puntos. Las respuestas incorrectas no sumarán ningún punto. Al finalizar el nivel, se calculará el puntaje total en función del número de respuestas correctas acumuladas.</value>

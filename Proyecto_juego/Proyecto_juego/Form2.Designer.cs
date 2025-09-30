@@ -105,6 +105,7 @@
             this.BackgroundImage = global::Proyecto_juego.Properties.Resources.istockphoto_1342416557_612x612;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(751, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.btnatras);
             this.Controls.Add(this.panel1);
             this.Name = "Form2";
